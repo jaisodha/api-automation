@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="0" name="cucumberOptions.TestRunner" time="3.575" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.5+10-LTS"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/admin/Desktop/restAssured"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/admin/Desktop/restAssured"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.5+10-LTS"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/bx/2ssgk4ks5wn56hxcbc1l5kc00000gp/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.5.0/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.5.0/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.13.5"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.5.0/libexec/lib/jansi-native/osx64"/>
+    <property name="user.home" value="/Users/admin"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="jai"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.5.0/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher verify"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.5"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.5.0/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2019-10-15"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="Validating the app login flows" name="verify if user is successfully login into the app with json validations" time="3.268"/>
+  <testcase classname="Validating the app login flows" name="verify if user is successfully login into the app with json validations" time="0.307">
+    <error message="Unrecognized field &quot;message&quot; (class pojo.LoginResponse), not marked as ignorable (3 known properties: &quot;cached&quot;, &quot;success&quot;, &quot;data&quot;])
+ at [Source: (String)&quot;{&quot;cached&quot;: false, &quot;message&quot;: &quot;Invalid OTP&quot;, &quot;success&quot;: false}&quot;; line: 1, column: 31] (through reference chain: pojo.LoginResponse[&quot;message&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pojo.LoginResponse), not marked as ignorable (3 known properties: &quot;cached&quot;, &quot;success&quot;, &quot;data&quot;])
+ at [Source: (String)&quot;{&quot;cached&quot;: false, &quot;message&quot;: &quot;Invalid OTP&quot;, &quot;success&quot;: false}&quot;; line: 1, column: 31] (through reference chain: pojo.LoginResponse[&quot;message&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:840)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1192)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3205)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:221)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:58)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:224)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at steps.login.iShouldSeeTheSessionTokenInResponseWithJsonValidations(login.java:51)
+	at ✽.I should see the session token in response with json validations(file:///Users/admin/Desktop/restAssured/src/test/java/features/login.feature:5)
+</error>
+    <system-out>
+Scenario Outline: verify if user is successfully login into the app with json validations                                                         &amp;#27;[90m# src/test/java/features/login.feature:9&amp;#27;[0m
+Request method:	POST
+Request URI:	https://consumer-backend-staging.shuttlstage.com/v3/auth/user
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		deviceVersion=23
+				appVersion=38014
+				deviceId=861101033633193
+				platform=Android
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;loginType&quot;: &quot;SHUTTL&quot;,
+    &quot;newDevice&quot;: false,
+    &quot;newUser&quot;: true,
+    &quot;otp&quot;: &quot;1237&quot;,
+    &quot;phoneNumber&quot;: &quot;7406634660&quot;,
+    &quot;policyPerused&quot;: true
+}
+HTTP/1.1 200 OK
+Date: Mon, 01 Jun 2020 04:36:20 GMT
+Content-Type: application/json
+Content-Length: 61
+Connection: keep-alive
+server: LadyLuck
+content-language: en
+x-envoy-upstream-service-time: 23
+
+{
+    &quot;cached&quot;: false,
+    &quot;message&quot;: &quot;Invalid OTP&quot;,
+    &quot;success&quot;: false
+}
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mGiven user call &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;POST&quot;&amp;#27;[0m&amp;#27;[32m https request for &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;/v3/auth/user&quot;&amp;#27;[0m&amp;#27;[32m with &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;SHUTTL&apos;&amp;#27;[0m&amp;#27;[32m and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;false&apos;&amp;#27;[0m&amp;#27;[32m and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;true&apos;&amp;#27;[0m&amp;#27;[32m and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;1237&apos;&amp;#27;[0m&amp;#27;[32m and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;7406634660&apos;&amp;#27;[0m&amp;#27;[32m and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&apos;true&apos;&amp;#27;[0m&amp;#27;[32m body&amp;#27;[0m &amp;#27;[90m# steps.login.given_user_call_https_request_for_with_and_and_and_and_and_body(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mI should see the session token in response with json validations&amp;#27;[0m                                                                           &amp;#27;[90m# steps.login.iShouldSeeTheSessionTokenInResponseWithJsonValidations()&amp;#27;[0m
+      &amp;#27;[31mcom.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pojo.LoginResponse), not marked as ignorable (3 known properties: &quot;cached&quot;, &quot;success&quot;, &quot;data&quot;])
+ at [Source: (String)&quot;{&quot;cached&quot;: false, &quot;message&quot;: &quot;Invalid OTP&quot;, &quot;success&quot;: false}&quot;; line: 1, column: 31] (through reference chain: pojo.LoginResponse[&quot;message&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:840)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1192)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3205)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:221)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:58)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:224)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at steps.login.iShouldSeeTheSessionTokenInResponseWithJsonValidations(login.java:51)
+	at ✽.I should see the session token in response with json validations(file:///Users/admin/Desktop/restAssured/src/test/java/features/login.feature:5)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,174 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-01T04:36:40.428Z",
+        "before": [
+          {
+            "result": {
+              "duration": 910932000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.TestInitialize.TestSetup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "verify if user is successfully login into the app with json validations",
+        "description": "",
+        "id": "validating-the-app-login-flows;verify-if-user-is-successfully-login-into-the-app-with-json-validations;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1756320000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Given user call \"POST\" https request for \"/v3/auth/user\" with \u0027SHUTTL\u0027 and \u0027true\u0027 and \u0027true\u0027 and \u00271337\u0027 and \u00279555814581\u0027 and \u0027true\u0027 body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"/v3/auth/user\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027SHUTTL\u0027",
+                  "offset": 62
+                },
+                {
+                  "val": "\u0027true\u0027",
+                  "offset": 75
+                },
+                {
+                  "val": "\u0027true\u0027",
+                  "offset": 86
+                },
+                {
+                  "val": "\u00271337\u0027",
+                  "offset": 97
+                },
+                {
+                  "val": "\u00279555814581\u0027",
+                  "offset": 108
+                },
+                {
+                  "val": "\u0027true\u0027",
+                  "offset": 125
+                }
+              ],
+              "location": "steps.login.given_user_call_https_request_for_with_and_and_and_and_and_body(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 371914000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should see the session token in response with json validations",
+            "match": {
+              "location": "steps.login.iShouldSeeTheSessionTokenInResponseWithJsonValidations()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-01T04:36:43.561Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5442000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.TestInitialize.TestSetup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "verify if user is successfully login into the app with json validations",
+        "description": "",
+        "id": "validating-the-app-login-flows;verify-if-user-is-successfully-login-into-the-app-with-json-validations;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 269820000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Given user call \"POST\" https request for \"/v3/auth/user\" with \u0027SHUTTL\u0027 and \u0027false\u0027 and \u0027true\u0027 and \u00271237\u0027 and \u00277406634660\u0027 and \u0027true\u0027 body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"/v3/auth/user\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027SHUTTL\u0027",
+                  "offset": 62
+                },
+                {
+                  "val": "\u0027false\u0027",
+                  "offset": 75
+                },
+                {
+                  "val": "\u0027true\u0027",
+                  "offset": 87
+                },
+                {
+                  "val": "\u00271237\u0027",
+                  "offset": 98
+                },
+                {
+                  "val": "\u00277406634660\u0027",
+                  "offset": 109
+                },
+                {
+                  "val": "\u0027true\u0027",
+                  "offset": 126
+                }
+              ],
+              "location": "steps.login.given_user_call_https_request_for_with_and_and_and_and_and_body(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"message\" (class pojo.LoginResponse), not marked as ignorable (3 known properties: \"cached\", \"success\", \"data\"])\n at [Source: (String)\"{\"cached\": false, \"message\": \"Invalid OTP\", \"success\": false}\"; line: 1, column: 31] (through reference chain: pojo.LoginResponse[\"message\"])\n\tat com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:840)\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1192)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3205)\n\tat com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)\n\tat io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)\n\tat io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)\n\tat io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)\n\tat io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)\n\tat io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:221)\n\tat io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)\n\tat io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:58)\n\tat io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)\n\tat io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:224)\n\tat io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)\n\tat steps.login.iShouldSeeTheSessionTokenInResponseWithJsonValidations(login.java:51)\n\tat ✽.I should see the session token in response with json validations(file:///Users/admin/Desktop/restAssured/src/test/java/features/login.feature:5)\n",
+              "duration": 14043000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "I should see the session token in response with json validations",
+            "match": {
+              "location": "steps.login.iShouldSeeTheSessionTokenInResponseWithJsonValidations()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validating the app login flows",
+    "description": "",
+    "id": "validating-the-app-login-flows",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/login.feature",
+    "tags": []
+  }
+]

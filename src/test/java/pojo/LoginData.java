@@ -1,6 +1,6 @@
 package pojo;
 
-public class Data {
+public class LoginData {
         private boolean confirmUserData;
         private boolean newUser;
         private String sessionId;

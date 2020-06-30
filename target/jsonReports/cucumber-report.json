@@ -3,11 +3,125 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-16T12:38:38.312Z",
+        "start_timestamp": "2020-06-28T17:44:33.483Z",
         "before": [
           {
             "result": {
-              "duration": 1063981000,
+              "duration": 1096085000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TestSetup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2752003000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "verify if user is able to book a ride using coupon",
+        "description": "",
+        "id": "verify-if-a-user-is-able-to-book-a-ride;verify-if-user-is-able-to-book-a-ride-using-coupon",
+        "after": [
+          {
+            "result": {
+              "duration": 25531000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3134925000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "A user call \"POST\" https request for \"/v3/booking/create\" with",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"/v3/booking/create\"",
+                  "offset": 37
+                }
+              ],
+              "location": "steps.Booking.aUserCallHttpsRequestForWith(java.lang.String,java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "couponId",
+                  "fromId",
+                  "toId"
+                ]
+              },
+              {
+                "cells": [
+                  "b27aae6d-66ca-4d49-b6c5-31bbc1689d54",
+                  "5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4",
+                  "c8894713-07a8-4bb0-bb49-219f545bc377"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27562000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should get successful response with message \"Your ride has been confirmed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your ride has been confirmed\"",
+                  "offset": 49
+                }
+              ],
+              "location": "steps.Booking.userShouldGetSuccessfulResponseWithMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@booking"
+          }
+        ]
+      }
+    ],
+    "name": "Verify if a user is able to book a ride",
+    "description": "  Description: The purpose of this feature is to test that if a user has coupon \u0026 bookable slot then he should able to book a ride",
+    "id": "verify-if-a-user-is-able-to-book-a-ride",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/booking.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-28T17:44:40.617Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3265000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +136,7 @@
         "after": [
           {
             "result": {
-              "duration": 21701000,
+              "duration": 210000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +149,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2003397000,
+              "duration": 298591000,
               "status": "passed"
             },
             "line": 5,
@@ -69,7 +183,7 @@
           },
           {
             "result": {
-              "duration": 428671000,
+              "duration": 11355000,
               "status": "passed"
             },
             "line": 6,
@@ -93,11 +207,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-16T12:38:41.955Z",
+        "start_timestamp": "2020-06-28T17:44:40.950Z",
         "before": [
           {
             "result": {
-              "duration": 7312000,
+              "duration": 5758000,
               "status": "passed"
             },
             "match": {
@@ -112,7 +226,7 @@
         "after": [
           {
             "result": {
-              "duration": 391000,
+              "duration": 1073000,
               "status": "passed"
             },
             "match": {
@@ -125,11 +239,11 @@
         "steps": [
           {
             "result": {
-              "duration": 332599000,
+              "duration": 559397000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Given user call \"POST\" https request for \"/v3/auth/user/otp\" with \"false\" and \"9999954851\" and \"true\" body",
+            "name": "Given user call \"POST\" https request for \"/v3/auth/user/otp\" with \"false\" and \"9555814581\" and \"true\" body",
             "match": {
               "arguments": [
                 {
@@ -145,7 +259,7 @@
                   "offset": 66
                 },
                 {
-                  "val": "\"9999954851\"",
+                  "val": "\"9555814581\"",
                   "offset": 78
                 },
                 {
@@ -159,7 +273,7 @@
           },
           {
             "result": {
-              "duration": 17449000,
+              "duration": 19801000,
               "status": "passed"
             },
             "line": 6,
@@ -183,11 +297,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-16T12:38:42.338Z",
+        "start_timestamp": "2020-06-28T17:44:41.563Z",
         "before": [
           {
             "result": {
-              "duration": 5818000,
+              "duration": 14547000,
               "status": "passed"
             },
             "match": {
@@ -195,14 +309,14 @@
             }
           }
         ],
-        "line": 17,
+        "line": 16,
         "name": "verify if user is successfully login into the app with json validations",
         "description": "",
         "id": "validating-the-app-login-flows;verify-if-user-is-successfully-login-into-the-app-with-json-validations;;2",
         "after": [
           {
             "result": {
-              "duration": 155000,
+              "duration": 487000,
               "status": "passed"
             },
             "match": {
@@ -215,7 +329,7 @@
         "steps": [
           {
             "result": {
-              "duration": 592340000,
+              "duration": 528089000,
               "status": "passed"
             },
             "line": 13,
@@ -258,27 +372,15 @@
               "location": "steps.login.given_user_call_https_request_for_with_and_and_and_and_and_body(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 495604000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I should see the session token in response with json validations",
-            "match": {
-              "location": "steps.login.iShouldSeeTheSessionTokenInResponseWithJsonValidations()"
-            },
-            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-06-16T12:38:43.440Z",
+        "start_timestamp": "2020-06-28T17:44:42.120Z",
         "before": [
           {
             "result": {
-              "duration": 4401000,
+              "duration": 4727000,
               "status": "passed"
             },
             "match": {
@@ -286,14 +388,14 @@
             }
           }
         ],
-        "line": 18,
+        "line": 17,
         "name": "verify if user is successfully login into the app with json validations",
         "description": "",
         "id": "validating-the-app-login-flows;verify-if-user-is-successfully-login-into-the-app-with-json-validations;;3",
         "after": [
           {
             "result": {
-              "duration": 238000,
+              "duration": 137000,
               "status": "passed"
             },
             "match": {
@@ -306,11 +408,11 @@
         "steps": [
           {
             "result": {
-              "duration": 497781000,
+              "duration": 512362000,
               "status": "passed"
             },
             "line": 13,
-            "name": "Given user call \"POST\" https request for \"/v3/auth/user\" with \u0027SHUTTL\u0027 and \u0027false\u0027 and \u0027true\u0027 and \u00271337\u0027 and \u00279999954851\u0027 and \u0027true\u0027 body",
+            "name": "Given user call \"POST\" https request for \"/v3/auth/user\" with \u0027SHUTTL\u0027 and \u0027false\u0027 and \u0027true\u0027 and \u00271337\u0027 and \u00279555814581\u0027 and \u0027true\u0027 body",
             "match": {
               "arguments": [
                 {
@@ -338,7 +440,7 @@
                   "offset": 98
                 },
                 {
-                  "val": "\u00279999954851\u0027",
+                  "val": "\u00279555814581\u0027",
                   "offset": 109
                 },
                 {
@@ -349,18 +451,120 @@
               "location": "steps.login.given_user_call_https_request_for_with_and_and_and_and_and_body(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-28T17:44:42.646Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5365000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TestSetup()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "verify if user is successfully registered himself in the shuttl app",
+        "description": "",
+        "id": "validating-the-app-login-flows;verify-if-user-is-successfully-registered-himself-in-the-shuttl-app;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 162000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 546668000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user call \"POST\" https request for \"/v3/auth/confirmRegister\" with \u0027jaisinghsodha27@gmail.com\u0027 and \u0027MALE\u0027 and \u002728.630950927734375\u0027 and \u002777.21727752685547\u0027 and \u0027Dwarka+Sector+21+metro+station%2C+New+Delhi%2C+Delhi\u0027 and \u0027jai singh sodha\u0027 and \u002728.4118006\u0027 and \u002777.0419318\u0027 and \u0027CD+Chowk%2C+Sector+48%2C+Gurugram%2C+Haryana+122004%2C+India\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"/v3/auth/confirmRegister\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\u0027jaisinghsodha27@gmail.com\u0027",
+                  "offset": 67
+                },
+                {
+                  "val": "\u0027MALE\u0027",
+                  "offset": 99
+                },
+                {
+                  "val": "\u002728.630950927734375\u0027",
+                  "offset": 110
+                },
+                {
+                  "val": "\u002777.21727752685547\u0027",
+                  "offset": 135
+                },
+                {
+                  "val": "\u0027Dwarka+Sector+21+metro+station%2C+New+Delhi%2C+Delhi\u0027",
+                  "offset": 159
+                },
+                {
+                  "val": "\u0027jai singh sodha\u0027",
+                  "offset": 218
+                },
+                {
+                  "val": "\u002728.4118006\u0027",
+                  "offset": 240
+                },
+                {
+                  "val": "\u002777.0419318\u0027",
+                  "offset": 257
+                },
+                {
+                  "val": "\u0027CD+Chowk%2C+Sector+48%2C+Gurugram%2C+Haryana+122004%2C+India\u0027",
+                  "offset": 274
+                }
+              ],
+              "location": "steps.login.user_call_https_request_for_with_and_and_and_and_and_and_and_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 13330000,
+              "duration": 16213000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "I should see the session token in response with json validations",
+            "line": 22,
+            "name": "I should see the success key value as \"true\" in the API response",
             "match": {
-              "location": "steps.login.iShouldSeeTheSessionTokenInResponseWithJsonValidations()"
+              "arguments": [
+                {
+                  "val": "\"true\"",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.login.iShouldSeeTheSuccessKeyValueAsInTheAPIResponse(java.lang.String)"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signup"
           }
         ]
       }
@@ -376,35 +580,26 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-16T12:38:43.990Z",
+        "start_timestamp": "2020-06-28T17:44:43.225Z",
         "before": [
           {
             "result": {
-              "duration": 9960000,
+              "duration": 28560000,
               "status": "passed"
             },
             "match": {
               "location": "steps.Hooks.TestSetup()"
             }
-          },
-          {
-            "result": {
-              "duration": 539947000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.Hooks.before(io.cucumber.java.Scenario)"
-            }
           }
         ],
-        "line": 4,
+        "line": 11,
         "name": "verify if user is able to get the timeslots",
         "description": "",
-        "id": "validating-the-route-search-results;verify-if-user-is-able-to-get-the-timeslots",
+        "id": "validating-the-route-search-results;verify-if-user-is-able-to-get-the-timeslots;;2",
         "after": [
           {
             "result": {
-              "duration": 413000,
+              "duration": 1316000,
               "status": "passed"
             },
             "match": {
@@ -413,15 +608,15 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1232012000,
+              "duration": 965073000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Given user call \"GET\" https request for \"/v4/routes/combinedSlots\" with",
+            "name": "Given user call \"GET\" https request for \"/v4/routes/combinedSlots\" with \u002728.58368506583371\u0027 and \u002777.21241725488308\u0027 and \u002728.56636061941184\u0027 and \u002777.20755711353199\u0027",
             "match": {
               "arguments": [
                 {
@@ -431,62 +626,34 @@
                 {
                   "val": "\"/v4/routes/combinedSlots\"",
                   "offset": 40
+                },
+                {
+                  "val": "\u002728.58368506583371\u0027",
+                  "offset": 72
+                },
+                {
+                  "val": "\u002777.21241725488308\u0027",
+                  "offset": 96
+                },
+                {
+                  "val": "\u002728.56636061941184\u0027",
+                  "offset": 120
+                },
+                {
+                  "val": "\u002777.20755711353199\u0027",
+                  "offset": 144
                 }
               ],
-              "location": "steps.route.givenUserCallHttpsRequestForWith(java.lang.String,java.lang.String,io.cucumber.datatable.DataTable)"
+              "location": "steps.Route.givenUserCallHttpsRequestForWithAndAndAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
-            "rows": [
-              {
-                "cells": [
-                  "fromLat",
-                  "fromLng",
-                  "toLat",
-                  "toLng"
-                ]
-              },
-              {
-                "cells": [
-                  "28.58368506583371",
-                  "77.21241725488308",
-                  "28.56636061941184",
-                  "77.20755711353199"
-                ]
-              },
-              {
-                "cells": [
-                  "28.58368506583371",
-                  "77.21241725488308",
-                  "28.56636061941184",
-                  "77.20755711353199"
-                ]
-              }
-            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 14503000,
+              "duration": 472074000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I should see the success key value as \"true\" in the API response",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"true\"",
-                  "offset": 38
-                }
-              ],
-              "location": "steps.login.iShouldSeeTheSuccessKeyValueAsInTheAPIResponse(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 123895000,
-              "status": "passed"
-            },
-            "line": 11,
+            "line": 6,
             "name": "I should see my pickup point as \"SF Airport\" and drop point as \"SFHospital\"",
             "match": {
               "arguments": [
@@ -499,16 +666,16 @@
                   "offset": 63
                 }
               ],
-              "location": "steps.route.iShouldSeeMyPickupPointAsAndDropPointAs(java.lang.String,java.lang.String)"
+              "location": "steps.Route.iShouldSeeMyPickupPointAsAndDropPointAs(java.lang.String,java.lang.String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 49407000,
+              "duration": 15330000,
               "status": "passed"
             },
-            "line": 12,
+            "line": 7,
             "name": "If I have any slot operational \"true\" then I should see slotType \"BOOKABLE\".",
             "match": {
               "arguments": [
@@ -521,29 +688,29 @@
                   "offset": 65
                 }
               ],
-              "location": "steps.route.ifIHaveAnySlotOperationalThenIShouldSeeSlotType(java.lang.String,java.lang.String)"
+              "location": "steps.Route.ifIHaveAnySlotOperationalThenIShouldSeeSlotType(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 63630000,
+              "duration": 25568000,
               "status": "passed"
             },
-            "line": 13,
-            "name": "user should be having \"SUBSCRIPTION\" with coupon code as \"EIIYKCQUZN\".",
+            "line": 8,
+            "name": "user should be having \"50 free rides\" with coupon code as \"AUTOMATION\".",
             "match": {
               "arguments": [
                 {
-                  "val": "\"SUBSCRIPTION\"",
+                  "val": "\"50 free rides\"",
                   "offset": 22
                 },
                 {
-                  "val": "\"EIIYKCQUZN\"",
-                  "offset": 57
+                  "val": "\"AUTOMATION\"",
+                  "offset": 58
                 }
               ],
-              "location": "steps.route.userShouldBeHavingWithCouponCodeAs(java.lang.String,java.lang.String)"
+              "location": "steps.Route.userShouldBeHavingWithCouponCodeAs(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -566,11 +733,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-16T12:38:46.089Z",
+        "start_timestamp": "2020-06-28T17:44:44.786Z",
         "before": [
           {
             "result": {
-              "duration": 4463000,
+              "duration": 2677000,
               "status": "passed"
             },
             "match": {
@@ -578,14 +745,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "verify if user is able to see the offerings in the app",
+        "line": 4,
+        "name": "Verify if user is able to see all the available offerings on the app",
         "description": "",
-        "id": "validating-the-subscription-related-flows;verify-if-user-is-able-to-see-the-offerings-in-the-app",
+        "id": "validating-the-subscription-related-flows;verify-if-user-is-able-to-see-all-the-available-offerings-on-the-app",
         "after": [
           {
             "result": {
-              "duration": 166000,
+              "duration": 135000,
               "status": "passed"
             },
             "match": {
@@ -598,10 +765,10 @@
         "steps": [
           {
             "result": {
-              "duration": 717381000,
+              "duration": 694546000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "Given user call \"GET\" https request for \"/api/v2/subscriptions\" with origin and destination stop",
             "match": {
               "arguments": [
@@ -634,11 +801,10 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: \nExpected: \"1 Rides\"\n     but: was \"10 Rides\"\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)\n\tat steps.Subscription.iShouldSeeTheAllGivenSubscriptionInTheAPIResponse(Subscription.java:47)\n\tat ✽.I should see the all given subscription in the API response(file:///Users/admin/Desktop/restAssured/src/test/java/features/subscription.feature:10)\n",
-              "duration": 30962000,
-              "status": "failed"
+              "duration": 21617000,
+              "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "I should see the all given subscription in the API response",
             "match": {
               "location": "steps.Subscription.iShouldSeeTheAllGivenSubscriptionInTheAPIResponse(io.cucumber.datatable.DataTable)"
@@ -676,7 +842,7 @@
               },
               {
                 "cells": [
-                  "1 Rides"
+                  "10 Rides"
                 ]
               }
             ],
@@ -686,6 +852,512 @@
         "tags": [
           {
             "name": "@pass"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-28T17:44:45.562Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2725000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TestSetup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Verify if user is able to see all the details related to particular offering",
+        "description": "",
+        "id": "validating-the-subscription-related-flows;verify-if-user-is-able-to-see-all-the-details-related-to-particular-offering",
+        "after": [
+          {
+            "result": {
+              "duration": 158000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 358831000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Given user call \"GET\" https request for \"/api/v2/subscriptions/4694105b-e0f8-476c-a6ea-4d6e5414331c\" with origin and destination stop",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"/api/v2/subscriptions/4694105b-e0f8-476c-a6ea-4d6e5414331c\"",
+                  "offset": 40
+                }
+              ],
+              "location": "steps.Subscription.givenUserCallHttpsRequestForWithOriginAndDestinationStop(java.lang.String,java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "origin_stop_id",
+                  "destination_stop_id"
+                ]
+              },
+              {
+                "cells": [
+                  "c8894713-07a8-4bb0-bb49-219f545bc377",
+                  "5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12201000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should see the subscription details in the API response as below",
+            "match": {
+              "location": "steps.Subscription.iShouldSeeTheSubscriptionDetailsInTheAPIResponseAsBelow(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "cta",
+                  "amount",
+                  "rides_count",
+                  "validity_days",
+                  "from_stop",
+                  "to_stop"
+                ]
+              },
+              {
+                "cells": [
+                  "CONTINUE TO PAY ₹1180",
+                  "1180.0",
+                  "10",
+                  "30",
+                  "c8894713-07a8-4bb0-bb49-219f545bc377",
+                  "5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-28T17:44:45.954Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13525000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TestSetup()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Verify if user is able to purchase a shuttl pass",
+        "description": "",
+        "id": "validating-the-subscription-related-flows;verify-if-user-is-able-to-purchase-a-shuttl-pass",
+        "after": [
+          {
+            "result": {
+              "duration": 103000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 488229000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Given user call \"POST\" https request for \"/v4/subPlan/buySubscriptionPaymentMethods\" for selected subscription",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"/v4/subPlan/buySubscriptionPaymentMethods\"",
+                  "offset": 41
+                }
+              ],
+              "location": "steps.Subscription.givenUserCallHttpsRequestForForSelectedSubscription(java.lang.String,java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "fromId",
+                  "subscriptionId",
+                  "toId",
+                  "twoWay"
+                ]
+              },
+              {
+                "cells": [
+                  "c8894713-07a8-4bb0-bb49-219f545bc377",
+                  "4694105b-e0f8-476c-a6ea-4d6e5414331c",
+                  "5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4",
+                  "false"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 260974000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User call \"GET\" https request for \"/v3/wallet/balance\" for shuttl wallet",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"/v3/wallet/balance\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.Subscription.userCallHttpsRequestForForShuttlWallet(java.lang.String,java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "wallet"
+                ]
+              },
+              {
+                "cells": [
+                  "SHUTTL_WALLET"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 960554000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User call \"POST\" https request for \"/v4/subPlan/buy\" with body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"/v4/subPlan/buy\"",
+                  "offset": 35
+                }
+              ],
+              "location": "steps.Subscription.userCallHttpsRequestForWithBody(java.lang.String,java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bookType",
+                  "deductShuttlCashback",
+                  "email",
+                  "fromId",
+                  "onlyAddOn",
+                  "paymentViaShuttlWallet",
+                  "selectTimeEnabled",
+                  "subscriptionId",
+                  "toId",
+                  "twoWay",
+                  "userFromLat",
+                  "userFromLng",
+                  "userFromName",
+                  "userToLat",
+                  "userToLng",
+                  "userToName",
+                  "wallet"
+                ]
+              },
+              {
+                "cells": [
+                  "SELF_BOOK",
+                  "true",
+                  "jaisinghsodha27@gmail.com",
+                  "c8894713-07a8-4bb0-bb49-219f545bc377",
+                  "false",
+                  "1180.0",
+                  "false",
+                  "4694105b-e0f8-476c-a6ea-4d6e5414331c",
+                  "5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4",
+                  "true",
+                  "0.0",
+                  "0.0",
+                  "SF Airport",
+                  "0.0",
+                  "0.0",
+                  "5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4",
+                  "SHUTTL_WALLET"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14028000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I should see the message \"Successfully Purchased Shuttl Pass\" in response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Successfully Purchased Shuttl Pass\"",
+                  "offset": 25
+                }
+              ],
+              "location": "steps.Subscription.iShouldSeeTheMessageInResponse(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-28T17:44:47.707Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3548000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TestSetup()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "Verify if user is able to see his purchased offering on the app",
+        "description": "",
+        "id": "validating-the-subscription-related-flows;verify-if-user-is-able-to-see-his-purchased-offering-on-the-app",
+        "after": [
+          {
+            "result": {
+              "duration": 726000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 397842000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User call \"GET\" https request for \"/api/v2/user_subscriptions\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"/api/v2/user_subscriptions\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.Subscription.userCallHttpsRequestFor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 321297000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User call \"GET\" https request for \"/api/v2/user_subscriptions/\" with userSubscription",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"/api/v2/user_subscriptions/\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.Subscription.userCallHttpsRequestForWithUserSubscription(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14626000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I should see the userSubscription details as below in API response",
+            "match": {
+              "location": "steps.Subscription.iShouldSeeTheUserSubscriptionDetailsAsBelowInAPIResponse(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "cta",
+                  "from_stop",
+                  "to_stop",
+                  "sub_cta",
+                  "applicability",
+                  "renewable",
+                  "state",
+                  "subscription_id",
+                  "RIDES REMAINING"
+                ]
+              },
+              {
+                "cells": [
+                  "RENEW PASS",
+                  "SFHospital",
+                  "SF Airport",
+                  "Carry forward your remaining rides",
+                  "TWO_WAY",
+                  "true",
+                  "ACTIVE",
+                  "4694105b-e0f8-476c-a6ea-4d6e5414331c",
+                  "\u003ch\u003e 10\u003c/h\u003e/10"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-28T17:44:48.460Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3215000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TestSetup()"
+            }
+          }
+        ],
+        "line": 51,
+        "name": "Verify if user is able to cancel his purchased pass",
+        "description": "",
+        "id": "validating-the-subscription-related-flows;verify-if-user-is-able-to-cancel-his-purchased-pass",
+        "after": [
+          {
+            "result": {
+              "duration": 186000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 329181000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "User call \"GET\" https request for \"/v3/sub/getRefundCategories\" with query params as userSubscription",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"/v3/sub/getRefundCategories\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.Subscription.userCallHttpsRequestForWithQueryParamsAsUserSubscription(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 265365000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "User call \"Post\" https request for \"/v3/sub/refundSubscription\" with userSubscription \u0026 reasonid",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Post\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"/v3/sub/refundSubscription\"",
+                  "offset": 35
+                }
+              ],
+              "location": "steps.Subscription.userCallHttpsRequestForWithUserSubscriptionReasonid(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11618000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I should see the refund success message \"The refund amount has been transferred to your wallet/account that was used for the transaction.\" in response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The refund amount has been transferred to your wallet/account that was used for the transaction.\"",
+                  "offset": 40
+                }
+              ],
+              "location": "steps.Subscription.iShouldSeeTheRefundSuccessMessageInResponse(java.lang.String)"
+            },
+            "keyword": "Then "
           }
         ]
       }

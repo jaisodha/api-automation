@@ -1,52 +1,50 @@
 package pojo;
 
-import java.util.List;
-
 public class SubscriptionData {
 
-    private String destination_stop_id;
-    private boolean is_first_transaction;
-    private String origin_stop_id;
-    public List<Sections> sections;
+    private String cta;
+    public PassInfoDetails info_details;
+    public PassOd od;
+    public SubDetails subscription_details;
+    private String tnc_text;
 
-
-    public String getDestination_stop_id() {
-        return destination_stop_id;
+    public String getCta() {
+        return cta;
     }
 
-    public void setDestination_stop_id(String destination_stop_id) {
-        this.destination_stop_id = destination_stop_id;
+    public void setCta(String cta) {
+        this.cta = cta;
     }
 
-
-
-
-    public boolean getIs_first_transaction() {
-        return is_first_transaction;
+    public PassInfoDetails getInfo_details() {
+        return info_details;
     }
 
-    public void setIs_first_transaction(boolean is_first_transaction) {
-        this.is_first_transaction = is_first_transaction;
+    public void setInfo_details(PassInfoDetails info_details) {
+        this.info_details = info_details;
     }
 
-
-
-
-    public String getOrigin_stop_id() {
-        return origin_stop_id;
+    public PassOd getOd() {
+        return od;
     }
 
-    public void setOrigin_stop_id(String origin_stop_id) {
-        this.origin_stop_id = origin_stop_id;
+    public void setOd(PassOd od) {
+        this.od = od;
     }
 
-    public List<Sections> getSections() {
-        return sections;
+    public SubDetails getSubscription_details() {
+        return subscription_details;
     }
 
-    public void setSections(List<Sections> sections) {
-        this.sections = sections;
+    public void setSubscription_details(SubDetails subscription_details) {
+        this.subscription_details = subscription_details;
     }
 
+    public String getTnc_text() {
+        return tnc_text;
+    }
 
+    public void setTnc_text(String tnc_text) {
+        this.tnc_text = tnc_text;
+    }
 }

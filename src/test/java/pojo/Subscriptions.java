@@ -1,13 +1,13 @@
 package pojo;
 
 public class Subscriptions {
-    public SubscriptionData data;
+    public SubscriptionsData data;
 
-    public SubscriptionData getData() {
+    public SubscriptionsData getData() {
         return data;
     }
 
-    public void setData(SubscriptionData data) {
+    public void setData(SubscriptionsData data) {
         this.data = data;
     }
 }

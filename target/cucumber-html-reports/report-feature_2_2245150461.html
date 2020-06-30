@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
         <td>1</td>
-      <td>16 Jun 2020, 18:08</td>
+      <td>25 Jun 2020, 22:55</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Validating the subscription related flows</td>
-          <td      class="passed"    >1</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >14</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">2</td>
+          <td >0</td>
+          <td class="total">14</td>
 
+          <td  class="passed"    >5</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
-          <td class="total">1</td>
+          <td class="total">5</td>
 
-          <td class="duration" data-value="748343000">0.748</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="5742407000">5.742</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -173,7 +173,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">Validating the subscription related flows</span>
 
@@ -193,14 +193,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.748</span>
+  <span class="lead-duration duration">1.417</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">verify if user is able to see the offerings in the app</span>
+  <span class="name">Verify if user is able to see all the available offerings on the app</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -209,7 +209,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -229,9 +229,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">steps.Hooks.TestSetup()</span>
+              <span class="location name">steps.Hooks.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.496</span>
 
           </div>
 
@@ -248,9 +248,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -260,7 +260,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -268,7 +268,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">Given user call <span class="argument">&quot;GET&quot;</span> https request for <span class="argument">&quot;/api/v2/subscriptions&quot;</span> with origin and destination stop</span>
 
-  <span class="lead-duration duration">0.717</span>
+  <span class="lead-duration duration">1.400</span>
 
 </div>
 
@@ -301,11 +301,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the all given subscription in the API response</span>
 
-  <span class="lead-duration duration">0.030</span>
+  <span class="lead-duration duration">0.017</span>
 
 </div>
 
@@ -313,24 +313,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: 
-Expected: &quot;1 Rides&quot;
-     but: was &quot;10 Rides&quot;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at steps.Subscription.iShouldSeeTheAllGivenSubscriptionInTheAPIResponse(Subscription.java:47)
-	at &#10045;.I should see the all given subscription in the API response(file:///Users/admin/Desktop/restAssured/src/test/java/features/subscription.feature:10)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
           <table class="step-arguments">
@@ -353,7 +335,7 @@ Expected: &quot;1 Rides&quot;
                   <td>15 Rides</td>
               </tr>
               <tr>
-                  <td>1 Rides</td>
+                  <td>10 Rides</td>
               </tr>
           </table>
 
@@ -373,7 +355,7 @@ Expected: &quot;1 Rides&quot;
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -385,7 +367,789 @@ Expected: &quot;1 Rides&quot;
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">steps.Hooks.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.391</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify if user is able to see all the details related to particular offering</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Given user call <span class="argument">&quot;GET&quot;</span> https request for <span class="argument">&quot;/api/v2/subscriptions/4694105b-e0f8-476c-a6ea-4d6e5414331c&quot;</span> with origin and destination stop</span>
+
+  <span class="lead-duration duration">0.379</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>origin_stop_id</td>
+                  <td>destination_stop_id</td>
+              </tr>
+              <tr>
+                  <td>c8894713-07a8-4bb0-bb49-219f545bc377</td>
+                  <td>5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the subscription details in the API response as below</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>cta</td>
+                  <td>amount</td>
+                  <td>rides_count</td>
+                  <td>validity_days</td>
+                  <td>from_stop</td>
+                  <td>to_stop</td>
+              </tr>
+              <tr>
+                  <td>CONTINUE TO PAY &#8377;1180</td>
+                  <td>1180.0</td>
+                  <td>10</td>
+                  <td>30</td>
+                  <td>c8894713-07a8-4bb0-bb49-219f545bc377</td>
+                  <td>5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-7" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">steps.Hooks.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">2.125</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify if user is able to purchase a shuttl pass</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Given user call <span class="argument">&quot;POST&quot;</span> https request for <span class="argument">&quot;/v4/subPlan/buySubscriptionPaymentMethods&quot;</span> for selected subscription</span>
+
+  <span class="lead-duration duration">0.674</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>fromId</td>
+                  <td>subscriptionId</td>
+                  <td>toId</td>
+                  <td>twoWay</td>
+              </tr>
+              <tr>
+                  <td>c8894713-07a8-4bb0-bb49-219f545bc377</td>
+                  <td>4694105b-e0f8-476c-a6ea-4d6e5414331c</td>
+                  <td>5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4</td>
+                  <td>false</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User call <span class="argument">&quot;GET&quot;</span> https request for <span class="argument">&quot;/v3/wallet/balance&quot;</span> for shuttl wallet</span>
+
+  <span class="lead-duration duration">0.280</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>wallet</td>
+              </tr>
+              <tr>
+                  <td>SHUTTL_WALLET</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User call <span class="argument">&quot;POST&quot;</span> https request for <span class="argument">&quot;/v4/subPlan/buy&quot;</span> with body</span>
+
+  <span class="lead-duration duration">1.151</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>bookType</td>
+                  <td>deductShuttlCashback</td>
+                  <td>email</td>
+                  <td>fromId</td>
+                  <td>onlyAddOn</td>
+                  <td>paymentViaShuttlWallet</td>
+                  <td>selectTimeEnabled</td>
+                  <td>subscriptionId</td>
+                  <td>toId</td>
+                  <td>twoWay</td>
+                  <td>userFromLat</td>
+                  <td>userFromLng</td>
+                  <td>userFromName</td>
+                  <td>userToLat</td>
+                  <td>userToLng</td>
+                  <td>userToName</td>
+                  <td>wallet</td>
+              </tr>
+              <tr>
+                  <td>SELF_BOOK</td>
+                  <td>true</td>
+                  <td>jaisinghsodha27@gmail.com</td>
+                  <td>c8894713-07a8-4bb0-bb49-219f545bc377</td>
+                  <td>false</td>
+                  <td>1180.0</td>
+                  <td>false</td>
+                  <td>4694105b-e0f8-476c-a6ea-4d6e5414331c</td>
+                  <td>5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4</td>
+                  <td>true</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>SF Airport</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4</td>
+                  <td>SHUTTL_WALLET</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the message <span class="argument">&quot;Successfully Purchased Shuttl Pass&quot;</span> in response</span>
+
+  <span class="lead-duration duration">0.019</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-10" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">steps.Hooks.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.163</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify if user is able to see his purchased offering on the app</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User call <span class="argument">&quot;GET&quot;</span> https request for <span class="argument">&quot;/api/v2/user_subscriptions&quot;</span></span>
+
+  <span class="lead-duration duration">0.702</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User call <span class="argument">&quot;GET&quot;</span> https request for <span class="argument">&quot;/api/v2/user_subscriptions/&quot;</span> with userSubscription</span>
+
+  <span class="lead-duration duration">0.432</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the userSubscription details as below in API response</span>
+
+  <span class="lead-duration duration">0.028</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>cta</td>
+                  <td>from_stop</td>
+                  <td>to_stop</td>
+                  <td>sub_cta</td>
+                  <td>applicability</td>
+                  <td>renewable</td>
+                  <td>state</td>
+                  <td>subscription_id</td>
+                  <td>RIDES REMAINING</td>
+              </tr>
+              <tr>
+                  <td>RENEW PASS</td>
+                  <td>SFHospital</td>
+                  <td>SF Airport</td>
+                  <td>Carry forward your remaining rides</td>
+                  <td>TWO_WAY</td>
+                  <td>true</td>
+                  <td>ACTIVE</td>
+                  <td>4694105b-e0f8-476c-a6ea-4d6e5414331c</td>
+                  <td>&lt;h&gt; 10&lt;/h&gt;/10</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-13" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">steps.Hooks.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.645</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify if user is able to cancel his purchased pass</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-14" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User call <span class="argument">&quot;GET&quot;</span> https request for <span class="argument">&quot;/v3/sub/getRefundCategories&quot;</span> with query params as userSubscription</span>
+
+  <span class="lead-duration duration">0.318</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User call <span class="argument">&quot;Post&quot;</span> https request for <span class="argument">&quot;/v3/sub/refundSubscription&quot;</span> with userSubscription &amp; reasonid</span>
+
+  <span class="lead-duration duration">0.315</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the refund success message <span class="argument">&quot;The refund amount has been transferred to your wallet/account that was used for the transaction.&quot;</span> in response</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-16" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>

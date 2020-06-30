@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
         <td>1</td>
-      <td>16 Jun 2020, 18:08</td>
+      <td>28 Jun 2020, 23:14</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@pass</td>
-          <td      class="passed"    >1</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >2</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">2</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="748343000">0.748</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="716163000">0.716</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -173,7 +173,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_2_2245150461.html">Validating the subscription related flows</a>
+      <a href="report-feature_3_2245150461.html">Validating the subscription related flows</a>
     </div>
 
 
@@ -183,14 +183,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.748</span>
+  <span class="lead-duration duration">0.716</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">verify if user is able to see the offerings in the app</span>
+  <span class="name">Verify if user is able to see all the available offerings on the app</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -199,7 +199,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -221,7 +221,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">steps.Hooks.TestSetup()</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -238,9 +238,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -258,7 +258,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">Given user call <span class="argument">&quot;GET&quot;</span> https request for <span class="argument">&quot;/api/v2/subscriptions&quot;</span> with origin and destination stop</span>
 
-  <span class="lead-duration duration">0.717</span>
+  <span class="lead-duration duration">0.694</span>
 
 </div>
 
@@ -291,11 +291,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see the all given subscription in the API response</span>
 
-  <span class="lead-duration duration">0.030</span>
+  <span class="lead-duration duration">0.021</span>
 
 </div>
 
@@ -303,24 +303,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: 
-Expected: &quot;1 Rides&quot;
-     but: was &quot;10 Rides&quot;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at steps.Subscription.iShouldSeeTheAllGivenSubscriptionInTheAPIResponse(Subscription.java:47)
-	at &#10045;.I should see the all given subscription in the API response(file:///Users/admin/Desktop/restAssured/src/test/java/features/subscription.feature:10)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
           <table class="step-arguments">
@@ -343,7 +325,7 @@ Expected: &quot;1 Rides&quot;
                   <td>15 Rides</td>
               </tr>
               <tr>
-                  <td>1 Rides</td>
+                  <td>10 Rides</td>
               </tr>
           </table>
 
@@ -363,7 +345,7 @@ Expected: &quot;1 Rides&quot;
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -375,7 +357,7 @@ Expected: &quot;1 Rides&quot;
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>

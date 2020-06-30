@@ -1,13 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: cucumberOptions.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.601 sec <<< FAILURE!
-verify if user is able to see the offerings in the app(Validating the subscription related flows)  Time elapsed: 0.782 sec  <<< FAILURE!
-java.lang.AssertionError: 
-Expected: "1 Rides"
-     but: was "10 Rides"
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at steps.Subscription.iShouldSeeTheAllGivenSubscriptionInTheAPIResponse(Subscription.java:47)
-	at ?.I should see the all given subscription in the API response(file:///Users/admin/Desktop/restAssured/src/test/java/features/subscription.feature:10)
-
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.767 sec

@@ -14,8 +14,8 @@ public class Hooks {
         BaseUtil baseUtil = new BaseUtil();
 
     }
-    @Before(order = 2,value = "@route")
-    public void before(Scenario scenario){
+    @Before(order = 2,value = "@booking")
+    public void before(Scenario scenario) throws IOException {
         String post = "post";
         String url = "/v3/auth/user";
         String loginType = "SHUTTL";

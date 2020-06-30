@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="1" name="cucumberOptions.TestRunner" time="8.732" errors="0" skipped="0">
+<testsuite tests="12" failures="0" name="cucumberOptions.TestRunner" time="15.832" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.5+10-LTS"/>
@@ -61,51 +61,16 @@
     <property name="java.vendor.version" value="18.9"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Validating the app login flows" name="verify if user is successfully able to generate the OTP" time="3.82"/>
-  <testcase classname="Validating the app login flows" name="verify if user is successfully able to generate the OTP" time="0.381"/>
-  <testcase classname="Validating the app login flows" name="verify if user is successfully login into the app with json validations" time="1.103"/>
-  <testcase classname="Validating the app login flows" name="verify if user is successfully login into the app with json validations" time="0.53"/>
-  <testcase classname="Validating the route search results" name="verify if user is able to get the timeslots" time="2.116"/>
-  <testcase classname="Validating the subscription related flows" name="verify if user is able to see the offerings in the app" time="0.782">
-    <failure message="
-Expected: &quot;1 Rides&quot;
-     but: was &quot;10 Rides&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: &quot;1 Rides&quot;
-     but: was &quot;10 Rides&quot;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at steps.Subscription.iShouldSeeTheAllGivenSubscriptionInTheAPIResponse(Subscription.java:47)
-	at ✽.I should see the all given subscription in the API response(file:///Users/admin/Desktop/restAssured/src/test/java/features/subscription.feature:10)
-</failure>
-    <system-out>
-@pass
-Scenario: verify if user is able to see the offerings in the app                                         &amp;#27;[90m# src/test/java/features/subscription.feature:5&amp;#27;[0m
-Request method:	GET
-Request URI:	https://consumer-backend-staging.shuttlstage.com/api/v2/subscriptions?origin_stop_id=c8894713-07a8-4bb0-bb49-219f545bc377&amp;destination_stop_id=5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	origin_stop_id=c8894713-07a8-4bb0-bb49-219f545bc377
-				destination_stop_id=5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		sessionId=DY2UT2VXGAPASARZJU536GSV74SXOLUSKCSNSDYXBCCGYRU26C5EWQOAB2YH4I7J6525QBNNQMWS7D6JN5ECS27S7JXUGFUJHHNOCBY
-				Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:			&lt;none&gt;
-  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mGiven user call &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;GET&quot;&amp;#27;[0m&amp;#27;[32m https request for &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;/api/v2/subscriptions&quot;&amp;#27;[0m&amp;#27;[32m with origin and destination stop&amp;#27;[0m &amp;#27;[90m# steps.Subscription.givenUserCallHttpsRequestForWithOriginAndDestinationStop(java.lang.String,java.lang.String,io.cucumber.datatable.DataTable)&amp;#27;[0m
-  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mI should see the all given subscription in the API response&amp;#27;[0m                                       &amp;#27;[90m# steps.Subscription.iShouldSeeTheAllGivenSubscriptionInTheAPIResponse(io.cucumber.datatable.DataTable)&amp;#27;[0m
-      &amp;#27;[31mjava.lang.AssertionError: 
-Expected: &quot;1 Rides&quot;
-     but: was &quot;10 Rides&quot;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at steps.Subscription.iShouldSeeTheAllGivenSubscriptionInTheAPIResponse(Subscription.java:47)
-	at ?.I should see the all given subscription in the API response(file:///Users/admin/Desktop/restAssured/src/test/java/features/subscription.feature:10)
-&amp;#27;[0m
-verify if user is able to see the offerings in the app Status - FAILED
-------------------------------------
-</system-out>
-  </testcase>
+  <testcase classname="Verify if a user is able to book a ride" name="verify if user is able to book a ride using coupon" time="7.373"/>
+  <testcase classname="Validating the app login flows" name="verify if user is successfully able to generate the OTP" time="0.33"/>
+  <testcase classname="Validating the app login flows" name="verify if user is successfully able to generate the OTP" time="0.607"/>
+  <testcase classname="Validating the app login flows" name="verify if user is successfully login into the app with json validations" time="0.564"/>
+  <testcase classname="Validating the app login flows" name="verify if user is successfully login into the app with json validations" time="0.528"/>
+  <testcase classname="Validating the app login flows" name="verify if user is successfully registered himself in the shuttl app" time="0.578"/>
+  <testcase classname="Validating the route search results" name="verify if user is able to get the timeslots" time="1.527"/>
+  <testcase classname="Validating the subscription related flows" name="Verify if user is able to see all the available offerings on the app" time="0.764"/>
+  <testcase classname="Validating the subscription related flows" name="Verify if user is able to see all the details related to particular offering" time="0.429"/>
+  <testcase classname="Validating the subscription related flows" name="Verify if user is able to purchase a shuttl pass" time="1.756"/>
+  <testcase classname="Validating the subscription related flows" name="Verify if user is able to see his purchased offering on the app" time="0.752"/>
+  <testcase classname="Validating the subscription related flows" name="Verify if user is able to cancel his purchased pass" time="0.624"/>
 </testsuite>

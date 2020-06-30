@@ -1,6 +1,5 @@
 package steps;
 
-import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.junit.Cucumber;
@@ -8,34 +7,33 @@ import io.restassured.response.Response;
 import io.restassured.response.ResponseOptions;
 import org.junit.runner.RunWith;
 import pojo.LoginBody;
-import pojo.LoginResponse;
 import pojo.OtpBody;
-import utilities.BaseUtil;
+import pojo.RegisterBody;
+import utilities.BaseUtility;
 
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+import java.io.IOException;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
 @RunWith(Cucumber.class)
 public class login {
     public static ResponseOptions<Response> respose;
+    public static String token = null;
 
-    @Given("Given user call {string} https request for {string} with body")
-    public void givenUserCallHttpsRequestForWithBody(String post, String url, DataTable table) {
-        var data = table.cells();
-        LoginBody loginBody = new LoginBody();
-        loginBody.setLoginType( data.get( 1 ).get( 0 ) );
-        loginBody.setNewDevice( Boolean.parseBoolean( data.get( 1 ).get( 1 ) ) );
-        loginBody.setNewUser( Boolean.parseBoolean( data.get( 1 ).get( 2 ) ) );
-        loginBody.setOtp( data.get( 1 ).get( 3 ) );
-        loginBody.setPhoneNumber( data.get( 1 ).get( 4 ) );
-        loginBody.setPolicyPerused( Boolean.parseBoolean( data.get( 1 ).get( 5 ) ) );
-        respose = BaseUtil.LoginWithBodyAndHeader( url, loginBody );
-
+    @Given("Given user call {string} https request for {string} with {string} and {string} and {string} body")
+    public void givenUserCallHttpsRequestForWithAndAndBody(String post, String uri, String newDevice, String phoneNumber, String policyPerused) throws IOException {
+        OtpBody otpBody = new OtpBody();
+        otpBody.setNewDevice( Boolean.parseBoolean( newDevice ) );
+        otpBody.setPhoneNumber( phoneNumber );
+        otpBody.setPolicyPerused( Boolean.parseBoolean( policyPerused ) );
+        BaseUtility util = new BaseUtility( post, uri, null );
+        respose = util.HitApiWithBody( otpBody );
+        // respose = BaseUtil.GenerateOtpWithBody( url, otpBody );
     }
 
     @Given("Given user call {string} https request for {string} with {string} and {string} and {string} and {string} and {string} and {string} body")
-    public static void given_user_call_https_request_for_with_and_and_and_and_and_body(String post, String url, String loginType, String newDevice, String newUser, String otp, String phoneNumber, String policyPerused) {
+    public static void given_user_call_https_request_for_with_and_and_and_and_and_body(String post, String uri, String loginType, String newDevice, String newUser, String otp, String phoneNumber, String policyPerused) throws IOException {
         LoginBody loginBody = new LoginBody();
         loginBody.setLoginType( loginType );
         loginBody.setNewDevice( Boolean.parseBoolean( newDevice ) );
@@ -43,28 +41,25 @@ public class login {
         loginBody.setOtp( otp );
         loginBody.setPhoneNumber( phoneNumber );
         loginBody.setPolicyPerused( Boolean.parseBoolean( policyPerused ) );
-        respose = BaseUtil.LoginWithBodyAndHeader( url, loginBody );
+        BaseUtility util = new BaseUtility( post, uri, null );
+        token = util.getUserSession( loginBody );
+        //respose = BaseUtil.LoginWithBodyAndHeader( url, loginBody );
     }
 
-
-    @Then("I should see the session token in response with json validations")
-    public void iShouldSeeTheSessionTokenInResponseWithJsonValidations() {
-        var responseBody = respose.getBody().asString();
-        assertThat( responseBody, matchesJsonSchemaInClasspath( "loginResponse.json" ) );
-        var loginResponse = respose.getBody().as( LoginResponse.class );
-        var session_token = loginResponse.getData().getSessionId();
-        System.out.println( session_token );
-    }
-
-
-    @Given("Given user call {string} https request for {string} with {string} and {string} and {string} body")
-    public void givenUserCallHttpsRequestForWithAndAndBody(String post, String url, String newDevice, String phoneNumber, String policyPerused) {
-        OtpBody otpBody = new OtpBody();
-        otpBody.setNewDevice( Boolean.parseBoolean( newDevice ) );
-        otpBody.setPhoneNumber( phoneNumber );
-        otpBody.setPolicyPerused( Boolean.parseBoolean( policyPerused ) );
-        respose = BaseUtil.GenerateOtpWithBody( url, otpBody );
-
+    @Given("user call {string} https request for {string} with {string} and {string} and {string} and {string} and {string} and {string} and {string} and {string} and {string}")
+    public void user_call_https_request_for_with_and_and_and_and_and_and_and_and(String post, String uri, String email, String gender, String homeLat, String homeLng, String homeLocation, String name, String workLat, String workLng, String workLocation) throws IOException {
+        RegisterBody registerBody = new RegisterBody();
+        registerBody.setEmail( email );
+        registerBody.setGender( gender );
+        registerBody.setHomeLat( Float.parseFloat( homeLat ) );
+        registerBody.setHomeLng( Float.parseFloat( homeLng ) );
+        registerBody.setHomeLocation( homeLocation );
+        registerBody.setName( name );
+        registerBody.setWorkLat( Float.parseFloat( workLat ) );
+        registerBody.setWorkLng( Float.parseFloat( workLng ) );
+        registerBody.setWorkLocation( workLocation );
+        BaseUtility util = new BaseUtility( post, uri, token );
+        respose = util.HitApiWithBodyAndHeader( registerBody );
     }
 
     @Then("I should see the success key value as {string} in the API response")

@@ -8,4 +8,4 @@ Feature: Validating the route search results
     And user should be having "50 free rides" with coupon code as "AUTOMATION".
     Examples:
       | fromLat           | fromLng           | toLat             |  toLng   |
-      | 28.58368506583371 | 77.21241725488308 | 28.56636061941184 | 77.20755711353199 |
+      | 28.58368506583371 | 77.21241 725488308 | 28.56636061941184 | 77.20755711353199 |

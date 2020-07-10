@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-28T17:44:33.483Z",
+        "start_timestamp": "2020-07-07T05:11:58.333Z",
         "before": [
           {
             "result": {
-              "duration": 1096085000,
+              "duration": 772449000,
               "status": "passed"
             },
             "match": {
@@ -16,7 +16,7 @@
           },
           {
             "result": {
-              "duration": 2752003000,
+              "duration": 2030446000,
               "status": "passed"
             },
             "match": {
@@ -27,11 +27,11 @@
         "line": 4,
         "name": "verify if user is able to book a ride using coupon",
         "description": "",
-        "id": "verify-if-a-user-is-able-to-book-a-ride;verify-if-user-is-able-to-book-a-ride-using-coupon",
+        "id": "verify-if-a-user-is-able-to-book--reschedule-and-cancel-a-ride;verify-if-user-is-able-to-book-a-ride-using-coupon",
         "after": [
           {
             "result": {
-              "duration": 25531000,
+              "duration": 16440000,
               "status": "passed"
             },
             "match": {
@@ -44,8 +44,9 @@
         "steps": [
           {
             "result": {
-              "duration": 3134925000,
-              "status": "passed"
+              "error_message": "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"subCta\" (class pojo.Cta), not marked as ignorable (2 known properties: \"title\", \"type\"])\n at [Source: (String)\"{\"cached\": false, \"data\": {\"cta\": \"RESERVE A SEAT\", \"inactiveCta\": \"BUY A NEW PASS\", \"routes\": [{\"bufferTime\": 100000, \"drop_stop_title\": \"Drop\", \"fromLoc\": {\"id\": \"5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4\", \"lat\": 28.58368506583371, \"lng\": 77.21241725488308, \"name\": \"SF Airport\", \"pickupPointTagDatas\": []}, \"futureSlots\": [], \"isActive\": true, \"isNotificationEnabled\": false, \"journeyTime\": 300.0, \"journeyTimeText\": \"0.08333333333333333 hours \", \"moreShuttlsInfoMessage\": \"These are approximate times\"[truncated 24696 chars]; line: 1, column: 1139] (through reference chain: pojo.CombinedSlots[\"data\"]-\u003epojo.CsData[\"routes\"]-\u003ejava.util.ArrayList[0]-\u003epojo.routes[\"slots\"]-\u003ejava.util.ArrayList[0]-\u003epojo.slots[\"cta\"]-\u003epojo.Cta[\"subCta\"])\n\tat com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:840)\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1192)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)\n\tat com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)\n\tat com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:286)\n\tat com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:245)\n\tat com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)\n\tat com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)\n\tat com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:286)\n\tat com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:245)\n\tat com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)\n\tat com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)\n\tat com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3205)\n\tat com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:135)\n\tat io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)\n\tat io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)\n\tat io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)\n\tat io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)\n\tat io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:221)\n\tat io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:196)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:216)\n\tat io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:58)\n\tat io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)\n\tat io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:224)\n\tat io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)\n\tat steps.Booking.getTripId(Booking.java:43)\n\tat steps.Booking.aUserCallHttpsRequestForWith(Booking.java:61)\n\tat ✽.A user call \"POST\" https request for \"/v3/booking/create\" with(file:///Users/admin/Desktop/restAssured/src/test/java/features/booking.feature:5)\n",
+              "duration": 2674586000,
+              "status": "failed"
             },
             "line": 5,
             "name": "A user call \"POST\" https request for \"/v3/booking/create\" with",
@@ -82,8 +83,8 @@
           },
           {
             "result": {
-              "duration": 27562000,
-              "status": "passed"
+              "duration": 46000,
+              "status": "skipped"
             },
             "line": 8,
             "name": "User should get successful response with message \"Your ride has been confirmed\"",
@@ -104,11 +105,304 @@
             "name": "@booking"
           }
         ]
+      },
+      {
+        "start_timestamp": "2020-07-07T05:12:03.980Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3994000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TestSetup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "verify if booking card is visible to user on home screen",
+        "description": "",
+        "id": "verify-if-a-user-is-able-to-book--reschedule-and-cancel-a-ride;verify-if-booking-card-is-visible-to-user-on-home-screen",
+        "after": [
+          {
+            "result": {
+              "duration": 321000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 637445000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "A user call \"GET\" https request for \"/api/v3/home_cards\" to fetch all cards",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"/api/v3/home_cards\"",
+                  "offset": 36
+                }
+              ],
+              "location": "steps.Booking.aUserCallHttpsRequestForToFetchAllCards(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 91061000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should get booking card if he has active booking",
+            "match": {
+              "location": "steps.Booking.userShouldGetBookingCardIfHeHasActiveBooking()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-07T05:12:04.727Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3469000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TestSetup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "verify if user is able to reschedule his ride",
+        "description": "",
+        "id": "verify-if-a-user-is-able-to-book--reschedule-and-cancel-a-ride;verify-if-user-is-able-to-reschedule-his-ride",
+        "after": [
+          {
+            "result": {
+              "duration": 157000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 411918000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Given user call \"GET\" https request for \"/v4/routes/combinedSlots\" with below payload for reschedulable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"/v4/routes/combinedSlots\"",
+                  "offset": 40
+                }
+              ],
+              "location": "steps.Booking.givenUserCallHttpsRequestForWithBelowPayloadForReschedulable(java.lang.String,java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "fromLat",
+                  "fromLng",
+                  "toLat",
+                  "toLng",
+                  "fromLocId",
+                  "toLocId",
+                  "routeId"
+                ]
+              },
+              {
+                "cells": [
+                  "28.58368506583371",
+                  "77.21241725488308",
+                  "28.56636061941184",
+                  "77.20755711353199",
+                  "5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4",
+                  "c8894713-07a8-4bb0-bb49-219f545bc377",
+                  "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"message\" (class pojo.RescheduleSlots), not marked as ignorable (3 known properties: \"cached\", \"success\", \"data\"])\n at [Source: (String)\"{\"message\": \"Invalid query_params: expected int (path \\\"boardingTime\\\")\"}\"; line: 1, column: 14] (through reference chain: pojo.RescheduleSlots[\"message\"])\n\tat com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:840)\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1192)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3205)\n\tat com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)\n\tat io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)\n\tat io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)\n\tat io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)\n\tat io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)\n\tat io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:221)\n\tat io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)\n\tat io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:58)\n\tat io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)\n\tat io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:224)\n\tat io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)\n\tat steps.Booking.userShouldGetABookableSlot(Booking.java:110)\n\tat ✽.User should get a bookable slot(file:///Users/admin/Desktop/restAssured/src/test/java/features/booking.feature:18)\n",
+              "duration": 21763000,
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "User should get a bookable slot",
+            "match": {
+              "location": "steps.Booking.userShouldGetABookableSlot()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 298000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "If user call \"POST\" https request for \"/v3/booking/create\" with reschedule create booking call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"/v3/booking/create\"",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.Booking.ifUserCallHttpsRequestForWithRescheduleCreateBookingCall(java.lang.String,java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "couponId",
+                  "fromId",
+                  "toId"
+                ]
+              },
+              {
+                "cells": [
+                  "b27aae6d-66ca-4d49-b6c5-31bbc1689d54",
+                  "5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4",
+                  "c8894713-07a8-4bb0-bb49-219f545bc377"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41000,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User should get successful response with message \"Your ride has been confirmed\" and parent booking status should be \"POSTPONED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your ride has been confirmed\"",
+                  "offset": 49
+                },
+                {
+                  "val": "\"POSTPONED\"",
+                  "offset": 116
+                }
+              ],
+              "location": "steps.Booking.userShouldGetSuccessfulResponseWithMessageAndParentBookingStatusShouldBe(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-07T05:12:05.191Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5765000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TestSetup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "verify if user is able to cancel his ride",
+        "description": "",
+        "id": "verify-if-a-user-is-able-to-book--reschedule-and-cancel-a-ride;verify-if-user-is-able-to-cancel-his-ride",
+        "after": [
+          {
+            "result": {
+              "duration": 192000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 335660000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "A user call \"POST\" https request for \"/v3/booking/cancel\" to cancel his ride",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"/v3/booking/cancel\"",
+                  "offset": 37
+                }
+              ],
+              "location": "steps.Booking.aUserCallHttpsRequestForToCancelHisRide(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document\n\tat io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)\n\tat io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)\n\tat io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)\n\tat io.restassured.path.json.JsonPath.get(JsonPath.java:202)\n\tat io.restassured.path.json.JsonPath.getString(JsonPath.java:352)\n\tat steps.Booking.userShouldGetHisBookingStatusAs(Booking.java:162)\n\tat ✽.User should get his bookingStatus as \"CANCELLED\"(file:///Users/admin/Desktop/restAssured/src/test/java/features/booking.feature:26)\nCaused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading \u0027\u003c\u0027, no possible valid JSON value or punctuation could be recognized.\n\tat groovy.json.JsonLexer.nextToken(JsonLexer.java:86)\n\tat groovy.json.JsonLexer$nextToken.call(Unknown Source)\n\tat io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)\n\tat io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)\n\tat io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)\n\tat io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)\n\tat io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)\n\tat io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)\n\tat io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)\n\tat io.restassured.path.json.JsonPath.get(JsonPath.java:202)\n\tat io.restassured.path.json.JsonPath.getString(JsonPath.java:352)\n\tat steps.Booking.userShouldGetHisBookingStatusAs(Booking.java:162)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:66)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\n",
+              "duration": 1469000,
+              "status": "failed"
+            },
+            "line": 26,
+            "name": "User should get his bookingStatus as \"CANCELLED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CANCELLED\"",
+                  "offset": 37
+                }
+              ],
+              "location": "steps.Booking.userShouldGetHisBookingStatusAs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
       }
     ],
-    "name": "Verify if a user is able to book a ride",
+    "name": "Verify if a user is able to book, reschedule and cancel a ride",
     "description": "  Description: The purpose of this feature is to test that if a user has coupon \u0026 bookable slot then he should able to book a ride",
-    "id": "verify-if-a-user-is-able-to-book-a-ride",
+    "id": "verify-if-a-user-is-able-to-book--reschedule-and-cancel-a-ride",
     "keyword": "Feature",
     "uri": "file:src/test/java/features/booking.feature",
     "tags": []
@@ -117,11 +411,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-28T17:44:40.617Z",
+        "start_timestamp": "2020-07-07T05:12:05.555Z",
         "before": [
           {
             "result": {
-              "duration": 3265000,
+              "duration": 5261000,
               "status": "passed"
             },
             "match": {
@@ -136,7 +430,7 @@
         "after": [
           {
             "result": {
-              "duration": 210000,
+              "duration": 277000,
               "status": "passed"
             },
             "match": {
@@ -149,7 +443,7 @@
         "steps": [
           {
             "result": {
-              "duration": 298591000,
+              "duration": 1295394000,
               "status": "passed"
             },
             "line": 5,
@@ -183,7 +477,7 @@
           },
           {
             "result": {
-              "duration": 11355000,
+              "duration": 11181000,
               "status": "passed"
             },
             "line": 6,
@@ -207,11 +501,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-28T17:44:40.950Z",
+        "start_timestamp": "2020-07-07T05:12:06.889Z",
         "before": [
           {
             "result": {
-              "duration": 5758000,
+              "duration": 3816000,
               "status": "passed"
             },
             "match": {
@@ -226,7 +520,7 @@
         "after": [
           {
             "result": {
-              "duration": 1073000,
+              "duration": 146000,
               "status": "passed"
             },
             "match": {
@@ -239,7 +533,7 @@
         "steps": [
           {
             "result": {
-              "duration": 559397000,
+              "duration": 271667000,
               "status": "passed"
             },
             "line": 5,
@@ -273,7 +567,7 @@
           },
           {
             "result": {
-              "duration": 19801000,
+              "duration": 14204000,
               "status": "passed"
             },
             "line": 6,
@@ -297,11 +591,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-28T17:44:41.563Z",
+        "start_timestamp": "2020-07-07T05:12:07.232Z",
         "before": [
           {
             "result": {
-              "duration": 14547000,
+              "duration": 2630000,
               "status": "passed"
             },
             "match": {
@@ -316,7 +610,7 @@
         "after": [
           {
             "result": {
-              "duration": 487000,
+              "duration": 138000,
               "status": "passed"
             },
             "match": {
@@ -329,7 +623,7 @@
         "steps": [
           {
             "result": {
-              "duration": 528089000,
+              "duration": 788611000,
               "status": "passed"
             },
             "line": 13,
@@ -376,11 +670,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-28T17:44:42.120Z",
+        "start_timestamp": "2020-07-07T05:12:08.034Z",
         "before": [
           {
             "result": {
-              "duration": 4727000,
+              "duration": 4416000,
               "status": "passed"
             },
             "match": {
@@ -395,7 +689,7 @@
         "after": [
           {
             "result": {
-              "duration": 137000,
+              "duration": 152000,
               "status": "passed"
             },
             "match": {
@@ -408,7 +702,7 @@
         "steps": [
           {
             "result": {
-              "duration": 512362000,
+              "duration": 811184000,
               "status": "passed"
             },
             "line": 13,
@@ -455,11 +749,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-28T17:44:42.646Z",
+        "start_timestamp": "2020-07-07T05:12:08.872Z",
         "before": [
           {
             "result": {
-              "duration": 5365000,
+              "duration": 3955000,
               "status": "passed"
             },
             "match": {
@@ -474,7 +768,7 @@
         "after": [
           {
             "result": {
-              "duration": 162000,
+              "duration": 263000,
               "status": "passed"
             },
             "match": {
@@ -487,7 +781,7 @@
         "steps": [
           {
             "result": {
-              "duration": 546668000,
+              "duration": 621541000,
               "status": "passed"
             },
             "line": 21,
@@ -545,7 +839,7 @@
           },
           {
             "result": {
-              "duration": 16213000,
+              "duration": 11161000,
               "status": "passed"
             },
             "line": 22,
@@ -580,11 +874,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-28T17:44:43.225Z",
+        "start_timestamp": "2020-07-07T05:12:09.516Z",
         "before": [
           {
             "result": {
-              "duration": 28560000,
+              "duration": 3336000,
               "status": "passed"
             },
             "match": {
@@ -599,7 +893,7 @@
         "after": [
           {
             "result": {
-              "duration": 1316000,
+              "duration": 125000,
               "status": "passed"
             },
             "match": {
@@ -612,11 +906,11 @@
         "steps": [
           {
             "result": {
-              "duration": 965073000,
+              "duration": 216470000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Given user call \"GET\" https request for \"/v4/routes/combinedSlots\" with \u002728.58368506583371\u0027 and \u002777.21241725488308\u0027 and \u002728.56636061941184\u0027 and \u002777.20755711353199\u0027",
+            "name": "Given user call \"GET\" https request for \"/v4/routes/combinedSlots\" with \u002728.58368506583371\u0027 and \u002777.21241 725488308\u0027 and \u002728.56636061941184\u0027 and \u002777.20755711353199\u0027",
             "match": {
               "arguments": [
                 {
@@ -632,16 +926,16 @@
                   "offset": 72
                 },
                 {
-                  "val": "\u002777.21241725488308\u0027",
+                  "val": "\u002777.21241 725488308\u0027",
                   "offset": 96
                 },
                 {
                   "val": "\u002728.56636061941184\u0027",
-                  "offset": 120
+                  "offset": 121
                 },
                 {
                   "val": "\u002777.20755711353199\u0027",
-                  "offset": 144
+                  "offset": 145
                 }
               ],
               "location": "steps.Route.givenUserCallHttpsRequestForWithAndAndAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
@@ -650,8 +944,9 @@
           },
           {
             "result": {
-              "duration": 472074000,
-              "status": "passed"
+              "error_message": "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"message\" (class pojo.CombinedSlots), not marked as ignorable (3 known properties: \"cached\", \"success\", \"data\"])\n at [Source: (String)\"{\"message\": \"Invalid query_params: expected float (path \\\"fromLng\\\")\"}\"; line: 1, column: 14] (through reference chain: pojo.CombinedSlots[\"message\"])\n\tat com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:840)\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1192)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3205)\n\tat com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)\n\tat io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)\n\tat io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)\n\tat io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)\n\tat io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)\n\tat io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:221)\n\tat io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)\n\tat io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:58)\n\tat io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)\n\tat io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:224)\n\tat io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)\n\tat steps.Route.iShouldSeeMyPickupPointAsAndDropPointAs(Route.java:37)\n\tat ✽.I should see my pickup point as \"SF Airport\" and drop point as \"SFHospital\"(file:///Users/admin/Desktop/restAssured/src/test/java/features/route.feature:6)\n",
+              "duration": 13086000,
+              "status": "failed"
             },
             "line": 6,
             "name": "I should see my pickup point as \"SF Airport\" and drop point as \"SFHospital\"",
@@ -672,8 +967,8 @@
           },
           {
             "result": {
-              "duration": 15330000,
-              "status": "passed"
+              "duration": 34000,
+              "status": "skipped"
             },
             "line": 7,
             "name": "If I have any slot operational \"true\" then I should see slotType \"BOOKABLE\".",
@@ -694,8 +989,8 @@
           },
           {
             "result": {
-              "duration": 25568000,
-              "status": "passed"
+              "duration": 21000,
+              "status": "skipped"
             },
             "line": 8,
             "name": "user should be having \"50 free rides\" with coupon code as \"AUTOMATION\".",
@@ -733,11 +1028,189 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-28T17:44:44.786Z",
+        "start_timestamp": "2020-07-07T05:12:09.785Z",
         "before": [
           {
             "result": {
-              "duration": 2677000,
+              "duration": 10281000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TestSetup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify if the place preference values for bing \u0026 google",
+        "description": "",
+        "id": "validating-the-stop-search-results;verify-if-the-place-preference-values-for-bing-\u0026-google",
+        "after": [
+          {
+            "result": {
+              "duration": 145000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 206076000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User call \"GET\" https request for \"/shuttl/places_preference\" call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"/shuttl/places_preference\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.StopSearch.user_call_https_request_for_call(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9772000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "If search provider name is \"GOOGLE\" then triggered value should be \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GOOGLE\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"10\"",
+                  "offset": 67
+                }
+              ],
+              "location": "steps.StopSearch.ifSearchProviderNameIsThenTriggeredValueShouldBe(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@stop"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-07T05:12:10.029Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2867000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TestSetup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify if user is able to see the desired stops",
+        "description": "",
+        "id": "validating-the-stop-search-results;verify-if-user-is-able-to-see-the-desired-stops",
+        "after": [
+          {
+            "result": {
+              "duration": 156000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 335719000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User call \"GET\" https request for \"/v2/routes/search\" with String \"sfai\" and type as \"FROM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"/v2/routes/search\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"sfai\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"FROM\"",
+                  "offset": 85
+                }
+              ],
+              "location": "steps.StopSearch.userCallHttpsRequestForWithStringAndTypeAs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5791000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Results should contain \"SFHospital\" and \"SF Airport\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SFHospital\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"SF Airport\"",
+                  "offset": 40
+                }
+              ],
+              "location": "steps.StopSearch.resultsShouldContainAnd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validating the stop search results",
+    "description": "  Description: The purpose of this feature is to test the stop results and place preferences",
+    "id": "validating-the-stop-search-results",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/stops.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-07T05:12:10.383Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2861000,
               "status": "passed"
             },
             "match": {
@@ -752,7 +1225,7 @@
         "after": [
           {
             "result": {
-              "duration": 135000,
+              "duration": 104000,
               "status": "passed"
             },
             "match": {
@@ -765,7 +1238,7 @@
         "steps": [
           {
             "result": {
-              "duration": 694546000,
+              "duration": 810200000,
               "status": "passed"
             },
             "line": 5,
@@ -801,7 +1274,7 @@
           },
           {
             "result": {
-              "duration": 21617000,
+              "duration": 12512000,
               "status": "passed"
             },
             "line": 9,
@@ -856,11 +1329,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-28T17:44:45.562Z",
+        "start_timestamp": "2020-07-07T05:12:11.218Z",
         "before": [
           {
             "result": {
-              "duration": 2725000,
+              "duration": 2223000,
               "status": "passed"
             },
             "match": {
@@ -875,7 +1348,7 @@
         "after": [
           {
             "result": {
-              "duration": 158000,
+              "duration": 533000,
               "status": "passed"
             },
             "match": {
@@ -888,7 +1361,7 @@
         "steps": [
           {
             "result": {
-              "duration": 358831000,
+              "duration": 387209000,
               "status": "passed"
             },
             "line": 19,
@@ -924,7 +1397,7 @@
           },
           {
             "result": {
-              "duration": 12201000,
+              "duration": 10588000,
               "status": "passed"
             },
             "line": 23,
@@ -959,11 +1432,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-28T17:44:45.954Z",
+        "start_timestamp": "2020-07-07T05:12:11.630Z",
         "before": [
           {
             "result": {
-              "duration": 13525000,
+              "duration": 4161000,
               "status": "passed"
             },
             "match": {
@@ -978,7 +1451,7 @@
         "after": [
           {
             "result": {
-              "duration": 103000,
+              "duration": 113000,
               "status": "passed"
             },
             "match": {
@@ -991,7 +1464,7 @@
         "steps": [
           {
             "result": {
-              "duration": 488229000,
+              "duration": 609313000,
               "status": "passed"
             },
             "line": 29,
@@ -1031,7 +1504,7 @@
           },
           {
             "result": {
-              "duration": 260974000,
+              "duration": 590153000,
               "status": "passed"
             },
             "line": 33,
@@ -1065,7 +1538,7 @@
           },
           {
             "result": {
-              "duration": 960554000,
+              "duration": 1334155000,
               "status": "passed"
             },
             "line": 37,
@@ -1131,7 +1604,7 @@
           },
           {
             "result": {
-              "duration": 14028000,
+              "duration": 11326000,
               "status": "passed"
             },
             "line": 41,
@@ -1150,11 +1623,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-28T17:44:47.707Z",
+        "start_timestamp": "2020-07-07T05:12:14.186Z",
         "before": [
           {
             "result": {
-              "duration": 3548000,
+              "duration": 7828000,
               "status": "passed"
             },
             "match": {
@@ -1169,7 +1642,7 @@
         "after": [
           {
             "result": {
-              "duration": 726000,
+              "duration": 1105000,
               "status": "passed"
             },
             "match": {
@@ -1182,7 +1655,7 @@
         "steps": [
           {
             "result": {
-              "duration": 397842000,
+              "duration": 341373000,
               "status": "passed"
             },
             "line": 44,
@@ -1204,7 +1677,7 @@
           },
           {
             "result": {
-              "duration": 321297000,
+              "duration": 308873000,
               "status": "passed"
             },
             "line": 45,
@@ -1226,7 +1699,7 @@
           },
           {
             "result": {
-              "duration": 14626000,
+              "duration": 15529000,
               "status": "passed"
             },
             "line": 47,
@@ -1267,11 +1740,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-28T17:44:48.460Z",
+        "start_timestamp": "2020-07-07T05:12:14.871Z",
         "before": [
           {
             "result": {
-              "duration": 3215000,
+              "duration": 2168000,
               "status": "passed"
             },
             "match": {
@@ -1286,7 +1759,7 @@
         "after": [
           {
             "result": {
-              "duration": 186000,
+              "duration": 111000,
               "status": "passed"
             },
             "match": {
@@ -1299,7 +1772,7 @@
         "steps": [
           {
             "result": {
-              "duration": 329181000,
+              "duration": 314032000,
               "status": "passed"
             },
             "line": 52,
@@ -1321,7 +1794,7 @@
           },
           {
             "result": {
-              "duration": 265365000,
+              "duration": 249211000,
               "status": "passed"
             },
             "line": 53,
@@ -1343,7 +1816,7 @@
           },
           {
             "result": {
-              "duration": 11618000,
+              "duration": 8961000,
               "status": "passed"
             },
             "line": 54,

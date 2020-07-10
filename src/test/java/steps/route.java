@@ -23,7 +23,7 @@ public class Route {
 
     @Given("Given user call {string} https request for {string} with {string} and {string} and {string} and {string}")
     public void givenUserCallHttpsRequestForWithAndAndAnd(String get, String uri, String fromLat, String fromLng, String toLat, String toLng) throws IOException {
-        HashMap<String, String> queryParams = new HashMap<>();
+        HashMap<String, Object> queryParams = new HashMap<>();
         queryParams.put( "fromLat",fromLat );
         queryParams.put( "fromLng",fromLng );
         queryParams.put( "toLat", toLat );

@@ -26,7 +26,7 @@ public class Subscription {
     @Given("Given user call {string} https request for {string} with origin and destination stop")
     public void givenUserCallHttpsRequestForWithOriginAndDestinationStop(String get, String uri, DataTable table) throws IOException {
         var data = table.cells();
-        HashMap<String, String> queryParams = new HashMap<>();
+        HashMap<String, Object> queryParams = new HashMap<>();
         queryParams.put( "origin_stop_id", data.get( 1 ).get( 0 ) );
         queryParams.put( "destination_stop_id", data.get( 1 ).get( 1 ) );
         BaseUtility util = new BaseUtility( get, uri, token );
@@ -87,7 +87,7 @@ public class Subscription {
     @When("User call {string} https request for {string} for shuttl wallet")
     public void userCallHttpsRequestForForShuttlWallet(String get, String uri, DataTable table) throws IOException {
         var data = table.cells();
-        HashMap<String, String> queryParams = new HashMap<>();
+        HashMap<String, Object> queryParams = new HashMap<>();
         queryParams.put( "wallet", data.get( 1 ).get( 0 ) );
         BaseUtility util = new BaseUtility( get, uri, token );
         respose = util.HitApiWithQueryParams( queryParams );
@@ -155,7 +155,7 @@ public class Subscription {
 
     @Given("User call {string} https request for {string} with query params as userSubscription")
     public void userCallHttpsRequestForWithQueryParamsAsUserSubscription(String get, String uri) throws IOException {
-        HashMap<String, String> queryParams = new HashMap<>();
+        HashMap<String, Object> queryParams = new HashMap<>();
         queryParams.put( "userSubscriptionId",userSub );
         BaseUtility util = new BaseUtility( get, uri, token );
         respose = util.HitApiWithQueryParams( queryParams );

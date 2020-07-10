@@ -28,7 +28,7 @@ public class BaseUtil {
 
     public BaseUtil() throws IOException {
         REQUEST_BUILDER = new RequestSpecBuilder();
-        REQUEST_BUILDER.setBaseUri(getGlobalValue("baseUrl")).setContentType(ContentType.JSON);
+        REQUEST_BUILDER.setBaseUri(getGlobalValue( "consumerBaseUrl" )).setContentType(ContentType.JSON);
         var requestSpec = REQUEST_BUILDER.build();
         REQUEST = RestAssured.given().spec(requestSpec).log().all();
 

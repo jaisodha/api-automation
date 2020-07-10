@@ -14,7 +14,7 @@ public class Hooks {
         BaseUtil baseUtil = new BaseUtil();
 
     }
-    @Before(order = 2,value = "@booking")
+    @Before(order = 2,value = "@profile")
     public void before(Scenario scenario) throws IOException {
         String post = "post";
         String url = "/v3/auth/user";

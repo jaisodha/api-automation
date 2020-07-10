@@ -23,7 +23,13 @@ public class BaseUtility {
 
     public BaseUtility(String method,String uri, String token) throws IOException {
         this.method = method;
-        this.url = getGlobalValue( "baseUrl" ) + uri;
+        this.url = getGlobalValue( "consumerBaseUrl" ) + uri;
+        if (token != null)
+            builder.addHeader( "sessionId", session_token );
+    }
+    public BaseUtility(String method,String uri, String token, String BaseUrl) throws IOException {
+        this.method = method;
+        this.url = getGlobalValue( BaseUrl ) + uri;
         if (token != null)
             builder.addHeader( "sessionId", session_token );
     }
@@ -56,7 +62,7 @@ public class BaseUtility {
 
     }
 
-    public ResponseOptions<Response> HitApiWithQueryParams(Map<String, String> queryParams) {
+    public ResponseOptions<Response> HitApiWithQueryParams(Map<String, Object> queryParams) {
         builder.addQueryParams( queryParams );
         return HitApi();
     }

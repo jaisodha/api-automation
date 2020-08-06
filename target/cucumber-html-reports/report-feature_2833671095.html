@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
         <td>1</td>
-      <td>01 Jun 2020, 10:06</td>
+      <td>25 Jun 2020, 22:55</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Validating the app login flows</td>
-          <td      class="passed"    >3</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >8</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">4</td>
+          <td >0</td>
+          <td class="total">8</td>
 
-          <td  class="passed"    >1</td>
-          <td  class="failed"    >1</td>
-          <td class="total">2</td>
+          <td  class="passed"    >5</td>
+          <td >0</td>
+          <td class="total">5</td>
 
-          <td class="duration" data-value="2412097000">2.412</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="4857360000">4.857</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -173,14 +173,14 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">Validating the app login flows</span>
 
 
 </div>
 
-        <div class="description indention"></div>
+        <div class="description indention">  Description: The purpose of this feature is to test the just login flow in the app</div>
 
         <div class="elements inner-level">
 
@@ -188,17 +188,19 @@ $(document).ready(function() {
 
 
 <div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4082898728.html">@login</a>
 </div>
 
 
-  <span class="lead-duration duration">2.128</span>
+  <span class="lead-duration duration">2.808</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">verify if user is successfully login into the app with json validations</span>
+  <span class="name">verify if user is successfully able to generate the OTP</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -210,43 +212,11 @@ $(document).ready(function() {
   <div id="element-1" class="collapse collapsable-details ">
 
 
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-2" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">steps.TestInitialize.TestSetup()</span>
-
-  <span class="lead-duration duration">0.910</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -258,15 +228,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">Given user call <span class="argument">&quot;POST&quot;</span> https request for <span class="argument">&quot;/v3/auth/user&quot;</span> with <span class="argument">'SHUTTL'</span> and <span class="argument">'true'</span> and <span class="argument">'true'</span> and <span class="argument">'1337'</span> and <span class="argument">'9555814581'</span> and <span class="argument">'true'</span> body</span>
+  <span class="name">Given user call <span class="argument">&quot;POST&quot;</span> https request for <span class="argument">&quot;/v3/auth/user/otp&quot;</span> with <span class="argument">&quot;true&quot;</span> and <span class="argument">&quot;9555814581&quot;</span> and <span class="argument">&quot;true&quot;</span> body</span>
 
-  <span class="lead-duration duration">1.756</span>
+  <span class="lead-duration duration">2.351</span>
 
 </div>
 
@@ -291,9 +261,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should see the session token in response with json validations</span>
+  <span class="name">I should see the success key value as <span class="argument">&quot;true&quot;</span> in the API response</span>
 
-  <span class="lead-duration duration">0.371</span>
+  <span class="lead-duration duration">0.456</span>
 
 </div>
 
@@ -319,39 +289,8 @@ $(document).ready(function() {
 
 
 
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">0.283</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">verify if user is successfully login into the app with json validations</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-4" class="collapse collapsable-details  in ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-5">
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -363,13 +302,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-5" class="inner-level collapse collapsable-details ">
+    <div id="after-3" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">steps.TestInitialize.TestSetup()</span>
+            <span class="keyword indention">After</span>
+              <span class="location name">steps.Hooks.after(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.012</span>
 
           </div>
 
@@ -383,12 +322,45 @@ $(document).ready(function() {
     </div>
   </div>
 
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4082898728.html">@login</a>
+</div>
+
+
+  <span class="lead-duration duration">0.293</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">verify if user is successfully able to generate the OTP</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -398,15 +370,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">Given user call <span class="argument">&quot;POST&quot;</span> https request for <span class="argument">&quot;/v3/auth/user&quot;</span> with <span class="argument">'SHUTTL'</span> and <span class="argument">'false'</span> and <span class="argument">'true'</span> and <span class="argument">'1237'</span> and <span class="argument">'7406634660'</span> and <span class="argument">'true'</span> body</span>
+  <span class="name">Given user call <span class="argument">&quot;POST&quot;</span> https request for <span class="argument">&quot;/v3/auth/user/otp&quot;</span> with <span class="argument">&quot;false&quot;</span> and <span class="argument">&quot;9555814581&quot;</span> and <span class="argument">&quot;true&quot;</span> body</span>
 
-  <span class="lead-duration duration">0.269</span>
+  <span class="lead-duration duration">0.280</span>
 
 </div>
 
@@ -429,11 +401,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should see the session token in response with json validations</span>
+  <span class="name">I should see the success key value as <span class="argument">&quot;true&quot;</span> in the API response</span>
 
-  <span class="lead-duration duration">0.014</span>
+  <span class="lead-duration duration">0.012</span>
 
 </div>
 
@@ -442,41 +414,119 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-7">
-          <a>com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException:</a>
+
+
+
+
+
+
+
+
+
+
       </div>
-      <div id="msg-7" class="collapse collapsable-details  in ">
-        <pre>com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;message&quot; (class pojo.LoginResponse), not marked as ignorable (3 known properties: &quot;cached&quot;, &quot;success&quot;, &quot;data&quot;])
- at [Source: (String)&quot;{&quot;cached&quot;: false, &quot;message&quot;: &quot;Invalid OTP&quot;, &quot;success&quot;: false}&quot;; line: 1, column: 31] (through reference chain: pojo.LoginResponse[&quot;message&quot;])
-	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:840)
-	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1192)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1592)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1570)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3205)
-	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
-	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
-	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
-	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
-	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
-	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:221)
-	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
-	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:58)
-	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
-	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:224)
-	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
-	at steps.login.iShouldSeeTheSessionTokenInResponseWithJsonValidations(login.java:51)
-	at &#10045;.I should see the session token in response with json validations(file:///Users/admin/Desktop/restAssured/src/test/java/features/login.feature:5)
-</pre>
-      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-6" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">steps.Hooks.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
     </div>
   </div>
 
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.592</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">verify if user is successfully login into the app with json validations</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Given user call <span class="argument">&quot;POST&quot;</span> https request for <span class="argument">&quot;/v3/auth/user&quot;</span> with <span class="argument">'SHUTTL'</span> and <span class="argument">'true'</span> and <span class="argument">'true'</span> and <span class="argument">'1337'</span> and <span class="argument">'9555814581'</span> and <span class="argument">'true'</span> body</span>
+
+  <span class="lead-duration duration">0.592</span>
+
+</div>
+
+
+
+
+
+
 
 
 
@@ -494,6 +544,293 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-9" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">steps.Hooks.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.640</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">verify if user is successfully login into the app with json validations</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Given user call <span class="argument">&quot;POST&quot;</span> https request for <span class="argument">&quot;/v3/auth/user&quot;</span> with <span class="argument">'SHUTTL'</span> and <span class="argument">'false'</span> and <span class="argument">'true'</span> and <span class="argument">'1337'</span> and <span class="argument">'9555814581'</span> and <span class="argument">'true'</span> body</span>
+
+  <span class="lead-duration duration">0.640</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-12" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">steps.Hooks.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2210677079.html">@signup</a>
+</div>
+
+
+  <span class="lead-duration duration">0.522</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">verify if user is successfully registered himself in the shuttl app</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user call <span class="argument">&quot;POST&quot;</span> https request for <span class="argument">&quot;/v3/auth/confirmRegister&quot;</span> with <span class="argument">'jaisinghsodha27@gmail.com'</span> and <span class="argument">'MALE'</span> and <span class="argument">'28.630950927734375'</span> and <span class="argument">'77.21727752685547'</span> and <span class="argument">'Dwarka+Sector+21+metro+station%2C+New+Delhi%2C+Delhi'</span> and <span class="argument">'jai singh sodha'</span> and <span class="argument">'28.4118006'</span> and <span class="argument">'77.0419318'</span> and <span class="argument">'CD+Chowk%2C+Sector+48%2C+Gurugram%2C+Haryana+122004%2C+India'</span></span>
+
+  <span class="lead-duration duration">0.512</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the success key value as <span class="argument">&quot;true&quot;</span> in the API response</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-15" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">steps.Hooks.after(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
 
   </div>
 </div>

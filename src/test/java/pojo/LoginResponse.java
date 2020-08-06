@@ -3,7 +3,7 @@ package pojo;
 public class LoginResponse {
 
     private boolean cached;
-    Data DataObject;
+    LoginData loginDataObject;
     private boolean success;
 
 
@@ -13,8 +13,8 @@ public class LoginResponse {
         return cached;
     }
 
-    public Data getData() {
-        return DataObject;
+    public LoginData getData() {
+        return loginDataObject;
     }
 
     public boolean getSuccess() {
@@ -27,8 +27,8 @@ public class LoginResponse {
         this.cached = cached;
     }
 
-    public void setData(Data dataObject) {
-        this.DataObject = dataObject;
+    public void setData(LoginData loginDataObject) {
+        this.loginDataObject = loginDataObject;
     }
 
     public void setSuccess(boolean success) {

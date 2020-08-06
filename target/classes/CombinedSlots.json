@@ -1,0 +1,1163 @@
+{
+  "cached": false,
+  "data": {
+    "cta": "RESERVE A SEAT",
+    "inactiveCta": "BUY A NEW PASS",
+    "routes": [
+      {
+        "bufferTime": 100000,
+        "drop_stop_title": "Drop",
+        "fromLoc": {
+          "id": "5752b57f-fd85-4c3a-9f67-6b1f30e2e7d4",
+          "lat": 28.58368506583371,
+          "lng": 77.21241725488308,
+          "name": "SF Airport",
+          "pickupPointTagDatas": []
+        },
+        "futureSlots": [],
+        "isActive": true,
+        "isNotificationEnabled": false,
+        "journeyTime": 300.0,
+        "journeyTimeText": "0.08333333333333333 hours ",
+        "moreShuttlsInfoMessage": "These are approximate times of arrival which can vary based on traffic conditions",
+        "multiScreen": false,
+        "offTimeMessage": "This route is not operational as of now, stay tuned for update.",
+        "offTimeRouteId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+        "operating_window": "09:45 pm - 11:06 pm",
+        "passRideInfo": {
+          "count": 41,
+          "text": "<h>41<h> Rides Remaining",
+          "type": "NORMAL"
+        },
+        "pickup_stop_title": "Pickup",
+        "reminderBeforeTime": 900000,
+        "reminderMessage": "We will notify you 15 mins before your selected travel time",
+        "reminderNotificationMessage": "Book your Shuttl ride from <fromLoc> to <toLoc>",
+        "reminderTitle": "Reminder Set!",
+        "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+        "slot_count_text": "16 Shuttls",
+        "slots": [
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "PREMIUM",
+            "slotTags": [
+              {
+                "displayText": "Extra Leg Space",
+                "type": "LEG_SPACE"
+              },
+              {
+                "displayText": "Sleeper",
+                "type": "SLEEPER_SEAT"
+              },
+              {
+                "displayText": "Pushback",
+                "type": "VEHICLE_CLASS_TYPE"
+              },
+              {
+                "displayText": "CCTV",
+                "type": "CCTV"
+              },
+              {
+                "displayText": "Charging point",
+                "type": "CHARGER_ON_SEAT"
+              },
+              {
+                "displayText": "AC",
+                "type": "AIR_CONDITIONED"
+              }
+            ],
+            "slotText": "Auto 1+1",
+            "slotType": "BOOKABLE",
+            "startTime": 1592237700000,
+            "trip": {
+              "fare": 126.0,
+              "id": "b9dd3230-37ff-4e4c-932c-a40de1e1df36",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 9,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592237700000,
+              "staticTime": 1592237700000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592237700000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592238900000,
+            "trip": {
+              "fare": 126.0,
+              "id": "dc6106de-9a44-4081-bff9-a1f9ac80a7dd",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592238900000,
+              "staticTime": 1592238900000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592238900000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592239800000,
+            "trip": {
+              "fare": 126.0,
+              "id": "2290927c-ed75-42a6-9788-5dab09ad013c",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592239800000,
+              "staticTime": 1592239800000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592239800000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "PREMIUM",
+            "slotTags": [
+              {
+                "displayText": "Extra Leg Space",
+                "type": "LEG_SPACE"
+              },
+              {
+                "displayText": "Sleeper",
+                "type": "SLEEPER_SEAT"
+              },
+              {
+                "displayText": "Pushback",
+                "type": "VEHICLE_CLASS_TYPE"
+              },
+              {
+                "displayText": "CCTV",
+                "type": "CCTV"
+              },
+              {
+                "displayText": "Charging point",
+                "type": "CHARGER_ON_SEAT"
+              },
+              {
+                "displayText": "AC",
+                "type": "AIR_CONDITIONED"
+              }
+            ],
+            "slotText": "Auto 1+1",
+            "slotType": "BOOKABLE",
+            "startTime": 1592241000000,
+            "trip": {
+              "fare": 126.0,
+              "id": "e5d00c54-21d6-4acd-a8f5-83c4fea4af0c",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 10,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592241000000,
+              "staticTime": 1592241000000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592241000000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592241120000,
+            "trip": {
+              "fare": 126.0,
+              "id": "416a79b1-e043-4ada-a758-020d41913d63",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592241120000,
+              "staticTime": 1592241120000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592241120000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592242200000,
+            "trip": {
+              "fare": 126.0,
+              "id": "261192cb-7c23-4b20-b4d4-7aef59003780",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592242200000,
+              "staticTime": 1592242200000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592242200000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592242560000,
+            "trip": {
+              "fare": 126.0,
+              "id": "2628ca54-a5bb-44ea-8f54-6fef7bd8409c",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592242560000,
+              "staticTime": 1592242560000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592242560000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "PREMIUM",
+            "slotTags": [
+              {
+                "displayText": "Extra Leg Space",
+                "type": "LEG_SPACE"
+              },
+              {
+                "displayText": "Sleeper",
+                "type": "SLEEPER_SEAT"
+              },
+              {
+                "displayText": "Pushback",
+                "type": "VEHICLE_CLASS_TYPE"
+              },
+              {
+                "displayText": "CCTV",
+                "type": "CCTV"
+              },
+              {
+                "displayText": "Charging point",
+                "type": "CHARGER_ON_SEAT"
+              },
+              {
+                "displayText": "AC",
+                "type": "AIR_CONDITIONED"
+              }
+            ],
+            "slotText": "Auto 1+1",
+            "slotType": "BOOKABLE",
+            "startTime": 1592243100000,
+            "trip": {
+              "fare": 126.0,
+              "id": "8440264d-49c0-4209-b0c6-795b7844a56e",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 10,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592243100000,
+              "staticTime": 1592243100000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592243100000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592260260000,
+            "trip": {
+              "fare": 126.0,
+              "id": "6b7bf4c0-0fdd-4ffd-ab7e-5cdb9dc1d03d",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592260260000,
+              "staticTime": 1592260260000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592260260000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592260800000,
+            "trip": {
+              "fare": 126.0,
+              "id": "d0851d80-81fe-4a44-9650-a692635bdea1",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592260800000,
+              "staticTime": 1592260800000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592260800000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592261580000,
+            "trip": {
+              "fare": 126.0,
+              "id": "ba0eea30-fd93-4275-9941-3c194e34f433",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592261580000,
+              "staticTime": 1592261580000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592261580000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592261880000,
+            "trip": {
+              "fare": 126.0,
+              "id": "e017cabb-5649-4a60-82d1-0b17ef7914cf",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592261880000,
+              "staticTime": 1592261880000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592261880000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592262720000,
+            "trip": {
+              "fare": 126.0,
+              "id": "8b05357f-649f-4c35-ad25-2aa2db9c335c",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592262720000,
+              "staticTime": 1592262720000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592262720000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592263320000,
+            "trip": {
+              "fare": 126.0,
+              "id": "70127e5e-668b-4852-8b04-dd2ddf027537",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592263320000,
+              "staticTime": 1592263320000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592263320000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592264400000,
+            "trip": {
+              "fare": 126.0,
+              "id": "6828d97f-4fcd-4470-b520-ee812584fca4",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592264400000,
+              "staticTime": 1592264400000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592264400000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592265300000,
+            "trip": {
+              "fare": 126.0,
+              "id": "49156cf2-ee88-4a28-83cf-20461cddfe77",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592265300000,
+              "staticTime": 1592265300000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592265300000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592303400000,
+            "trip": {
+              "fare": 126.0,
+              "id": "ccd887fd-5f32-4e12-80b0-66e6e6131b4e",
+              "isEtaStatic": false,
+              "journeyTime": 420000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592303400000,
+              "staticTime": 1592303400000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592303400000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592304000000,
+            "trip": {
+              "fare": 126.0,
+              "id": "6594b36b-4931-4933-b6b9-c77b2ee3a1fa",
+              "isEtaStatic": false,
+              "journeyTime": 420000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592304000000,
+              "staticTime": 1592304000000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592304000000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592317800000,
+            "trip": {
+              "fare": 126.0,
+              "id": "9b973977-3b48-40c9-a7d4-d5b0322d2bf8",
+              "isEtaStatic": false,
+              "journeyTime": 420000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592317800000,
+              "staticTime": 1592317800000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592317800000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592325300000,
+            "trip": {
+              "fare": 126.0,
+              "id": "4c1ab868-da5b-4cee-a6a8-ce15c3b398c3",
+              "isEtaStatic": false,
+              "journeyTime": 360000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592325300000,
+              "staticTime": 1592325300000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592325300000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592326200000,
+            "trip": {
+              "fare": 126.0,
+              "id": "ba37f003-8457-47ef-80e8-2bb35b618ef6",
+              "isEtaStatic": false,
+              "journeyTime": 360000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592326200000,
+              "staticTime": 1592326200000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592326200000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592327400000,
+            "trip": {
+              "fare": 126.0,
+              "id": "0fb31600-4cb7-454a-aa28-9d1f81b35cf3",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592327400000,
+              "staticTime": 1592327400000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592327400000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592327520000,
+            "trip": {
+              "fare": 126.0,
+              "id": "4c4e40b5-a2bb-43d1-a575-ebd70b6355a6",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592327520000,
+              "staticTime": 1592327520000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592327520000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592328600000,
+            "trip": {
+              "fare": 126.0,
+              "id": "1b517bf4-338e-4e66-ab9f-a42c67806af5",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592328600000,
+              "staticTime": 1592328600000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592328600000
+            },
+            "useInactiveCta": false
+          },
+          {
+            "coupon": {
+              "activeCouponId": "c7a5452f-6ee4-4612-9930-ac721f539017",
+              "couponAppliedMessage": "Coupon applied successfully",
+              "couponCode": "EIIYKCQUZN",
+              "couponDescription": "SUBSCRIPTION",
+              "couponExpiryDate": "27-Sep-2018",
+              "discountedFare": 0.0,
+              "subscriptionCountOnRoute": 0
+            },
+            "cta": {
+              "title": "RESERVE MY SEAT",
+              "type": "PASS_PAYMENT"
+            },
+            "isCurrentRide": false,
+            "nonOpMessage": "This Shuttl is not operational today. Please check again tomorrow.",
+            "operational": true,
+            "slotCategory": "STANDARD",
+            "slotType": "BOOKABLE",
+            "startTime": 1592328960000,
+            "trip": {
+              "fare": 126.0,
+              "id": "e4f17471-de57-4e1b-98a6-b26f5164d437",
+              "isEtaStatic": false,
+              "journeyTime": 300000,
+              "offer": null,
+              "routeId": "4a2a0e8d-ee20-4cf8-9827-94e8f52c4af3",
+              "seatsAvailable": 20,
+              "selected": false,
+              "startMessage": "Booking starts at 09:00 PM Today",
+              "startTime": 1592328960000,
+              "staticTime": 1592328960000,
+              "status": {
+                "text": "",
+                "textColor": "#00adb7"
+              },
+              "statusText": "",
+              "time": 1592328960000
+            },
+            "useInactiveCta": false
+          }
+        ],
+        "timeSlotPairMessageType": "ALERT",
+        "toLoc": {
+          "id": "c8894713-07a8-4bb0-bb49-219f545bc377",
+          "lat": 28.56636061941184,
+          "lng": 77.20755711353199,
+          "name": "SFHospital",
+          "pickupPointTagDatas": []
+        },
+        "unbookMessage": "Booking will open 30 mins before the boarding time.",
+        "unbookTitle": "More Shuttls that can be booked later",
+        "unbookableSlots": []
+      }
+    ],
+    "subCta": "Your current ride will be cancelled automatically"
+  },
+  "success": true
+}
